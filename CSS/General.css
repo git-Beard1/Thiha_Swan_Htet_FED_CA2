@@ -1,0 +1,165 @@
+@charset "utf-8";
+
+/*
+
+    Name    : Thiha Swan Htet
+    Date    : 07/08/2023
+
+    FED CA2 Interactive Website
+    General CSS for all pages
+
+*/
+
+/* Copyright Declaration and References
+
+The reference for the images are cited by comment under the code.
+
+
+The Images are used for educational purposes only. I do not own them, except my 
+profile picture from About Me Section.
+
+*/
+
+/* ---------------------------Navigation Bar------------------------- */
+
+@media only screen and (max-width: 992px) { /* remove navbar border below screen-size 992px */
+    #navbar-breakpoint .border{
+        border: none !important;
+    }
+}
+
+/* backgrond-color for the body */
+
+.background-color {
+    background-color: #e3edf7;
+}
+
+/* Changing the toggler button color (the three stripes) */
+
+.navbar .navbar-toggler-icon{
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 1%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+
+/* The navbar background color */
+
+.navbar-background{
+    background-color: rgb(250, 216, 144);
+}
+
+/* The navbar background color when hovered */
+
+.nav-bar ul li a:hover {
+    background-color: rgb(255, 253, 208);
+}
+
+/* Red underline for headings (About Me and SP Sustainability Pages) */
+
+.underline-red {
+    border-bottom: 2.3px solid rgb(255, 92, 92);
+}
+
+/* Green underline for headings (My Sustainability Page) */
+
+.underline-green {
+    border-bottom: 2.3px solid rgb(17, 125, 58);
+}
+
+/* Red heading coloring for SP Sustainability Page */
+
+.heading-red{
+    color: red;
+}
+
+/* Navbar javascript styling (Harry's Museum) */
+
+.heading-green{
+    color: rgb(16, 192, 63);
+}
+
+/* Shadow property on cards (About Me Introduction and SP 6 cards)*/
+.card-shadow{
+    box-shadow: 0 4px 10px 0 rgba(0,0,0,0.2),
+                0 4px 20px 0 rgba(0,0,0,0.19);
+}
+
+
+/* Social Media icons styling */
+
+.social-media-icon {
+    background-image: linear-gradient(to bottom right, #afb2b7, #d6e2e6, #FFFFFF) !important; /* linear-gradient bacground coloring */
+    box-shadow: 6px 6px 10px -1px rgba(0,0,0,0.15), /* bottom right box shadow  h(+right) v(+bottom) blur spread radii*/
+                -6px -6px 10px -1px rgba(255,255,255,0.7); /* top left box shadow */
+}
+
+.social-media-icon:hover{
+    box-shadow: 6px 6px 10px -1px rgba(0,0,0,0.15) inset, /* bottom right inside box shadow*/
+    -6px -6px 10px -1px rgba(255,255,255,0.7) inset; /* top left inside box shadow*/
+    transform: translateY(-10px); /* box will be raised 10 px when hovered. (- top)*/
+}
+
+a:hover .instagram{
+    color: rgb(248, 46, 110); /* instagram icon changes to pink color when hovered*/
+}
+
+a:hover .facebook{
+    color: rgb(0, 68, 255); /* facebook icon changes to blue color when hovered*/
+}
+
+a:hover .email, a:hover .youtube{
+    color: rgb(255, 38, 38); /* email and youtube icons changes to red color when hovered youtube from SP page */
+}
+
+a:hover .telegram, a:hover .twitter{
+    color: rgb(77, 189, 253); /* telegram and twitter icons change to light blue when hovered */
+}
+
+/* -------------------------------Carousel Adjustments--------------------------- */
+
+@media screen and (max-width: 992px) { /* Carousel adjustments for screen size below 992px */
+    #myValuesCarouselCards, #mySustainabilityCarouselCards, #worldActionsCarouselCards, #greenCoursesCarouselCards{
+        width: 100%;
+    }
+}
+
+@media screen and (min-width: 992px) { /* Carousel adjustments for screen size above 992px */
+    #myValuesCarouselCards, #mySustainabilityCarouselCards, #worldActionsCarouselCards, #greenCoursesCarouselCards{
+        width: 75%;
+    }
+}
+
+/* card scaling transformation styles */
+
+.SP-cards, .My-Sustainability-cards, .About-Me-cards{
+    overflow: hidden; /* hides the overflow content */
+}
+
+.SP-cards img ,.My-Sustainability-cards img, .About-Me-cards img{
+    position: relative;
+    overflow: hidden; /* hides the overflow content */
+    transition: 0.3s;
+}
+
+.SP-cards:hover img ,.My-Sustainability-cards:hover img, .About-Me-cards:hover img{
+    transform: scale(1.1); /* scales the image by 1.1 when hovered. Scale out animation */
+}
+
+/*Footer*/
+@media screen and (max-width: 576px) { /* Carousel adjustments for screen size below 992px */
+    #Contact-info{
+        display: none; /* hides the contact info (Address and social media icons) when screen size is below 576px */
+    }
+}
+
+@media screen and (min-width: 576px) { /* Carousel adjustments for screen size below 992px */
+    #smallContact{
+        display: none; /* hides the contact info (click to contact me button) when screen size is above 576px */
+    }
+}
+
+.My_link {
+    text-decoration: none !important; /* Removes underline for footer copyright */
+  }
+
+.My_link:hover {
+    color: #ec9020 !important; /* changes color when hovered */
+}

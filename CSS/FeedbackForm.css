@@ -1,0 +1,33 @@
+@charset "utf-8";
+
+/*
+
+    Name    : Thiha Swan Htet
+    Date    : 07/08/2023
+
+    FED CA2 Interactive Website
+    Feedback Form Page CSS
+
+*/
+
+/* Copyright Declaration and References
+
+The reference for the images are cited by comment under the code.
+
+
+The Images are used for educational purposes only. I do not own them, except my 
+profile picture from About Me Section.
+
+*/
+
+.form-background {
+    background-image: url("../Images/BlueForm.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+    /* 
+        Image Reference:display: 
+        https://www.freepik.com/free-vector/blue-curve-patterned-background_16310608.htm#query=soft%20blue&position=18&from_view=keyword&track=ais
+    */
+}

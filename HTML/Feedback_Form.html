@@ -1,0 +1,401 @@
+<!--
+
+    Name    : Thiha Swan Htet
+    Date    : 07/08/2023
+
+    FED CA2 Interactive Website
+    Feedback Form
+
+-->
+
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Feedback Form</title>
+    <link rel="stylesheet" href="../CSS/General.css">
+    <link rel="stylesheet" href="../CSS/FeedbackForm.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+
+    <!-- Copyright Declaration and References
+
+    The reference for the images are cited by comment under the code.
+    
+    The Images are used for educational purposes only. I do not own them, except my 
+    profile picture from About Me Section.
+
+    -->
+
+</head>
+
+
+
+<body class="background-color"><!--CSS Background color for the whole page-->
+
+    <!--Start of the navigation bar-->
+
+    <!--Padding 0 to take the whole screenwidth for the navbar-->
+
+    <header class="container-fluid sticky-top p-0"> <!--Position sticky for the navbar to be visible while scrolling -->
+
+        <nav class="navbar navbar-expand-lg navbar-background"> <!--navbar background for navbar coloring-->
+
+            <div class="container">
+                <a class="navbar-brand" href="../HTML/index.html" id="navBrand"></a>
+                <!--Title inserted with Javascript-->
+                <!--navBrand id to link with javascript-->
+                <button class="navbar-toggler border-2 border-dark" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#HamburgerMenu" aria-controls="HamburgerMenu" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span> <!--The Hamburger Icon-->
+                </button>
+
+                <div class="collapse navbar-collapse justify-content-end nav-bar" id="HamburgerMenu">
+                    <!--justify-content-end to make the nav-items to right corner-->
+
+                    <ul class="navbar-nav" id="navbar-breakpoint">
+                        <!--navbar-breakpoint css to remove borders when less than 992px-->
+                        <li class="nav-item border border-3 border-light nav-link-box ms-2">
+                            <!--navlink-box to style when hovered. margin left to split the nav boxes-->
+                            <a class="nav-link" href="../HTML/index.html">About Me</a>
+                        </li>
+                        <li class="nav-item border border-3 border-light nav-link-box ms-2">
+                            <a class="nav-link" href="../HTML/My_Sustainability.html">My Sustainability</a>
+                        </li>
+                        <li class="nav-item border border-3 border-light nav-link-box ms-2">
+                            <a class="nav-link" href="../HTML/SP_Sustainability.html">SP Sustainability</a>
+                        </li>
+                        <li class="nav-item border border-3 border-light nav-link-box ms-2">
+                            <a class="nav-link" href="../HTML/Feedback_Form.html">Feedback</a>
+                        </li>
+
+                    </ul>
+                </div>
+
+            </div>
+
+        </nav>
+
+    </header>
+
+    <div>
+        <!--Center the whole container for form layout-->
+        <div class="container d-flex justify-content-center align-items-center min-vh-100">
+
+            <div
+                class="row rounded bg-transparent shadow-lg p-3 form-background mt-md-5 mt-lg-5 mb-lg-4 mb-md-4 mb-sm-3 mb-3">
+
+                <!--Two columns in lg, picture and form side by side-->
+                <!--First column-->
+                <div
+                    class="col-sm-12 col-md-12 col-lg-6 d-flex justify-content-center align-items-center rounded rounded-3 mb-4">
+                    <!--Center Image-->
+                    <div class="Form_Image d-flex justify-content-center align-items-center">
+                        <img src="../Images/Form.png" class="img-fluid w-100"
+                            alt="A picture of people with a big phone in middle with flying rating emojis">
+                        <!--
+                            Image reference:
+                            https://adopttheweb.com/product-category/sales-marketing/;
+                        -->
+                    </div>
+                </div>
+
+                <!--Second column-->
+                <!--Feedback Form-->
+                <div class="col-sm-12 col-md-12 col-lg-6">
+                    <form method="dialog" class="needs-validation" novalidate><!--Validation-->
+                        <fieldset>
+                            <!--Feedback Form Heading-->
+                            <legend>
+                                <h3 class="text-center text-dark p-4">Feedback Form</h3>
+                            </legend>
+                            <!--Feedback Form Content-->
+                            <!--Name Field-->
+                            <div class="mb-3">
+                                <label for="firstName" class="form-label text-dark">Name</label>
+                                <input type="text" id="firstName" class="form-control" placeholder="Name: " required>
+                                <span class="invalid-feedback">Please type name. Name field is required.</span>
+                            </div>
+                            <!--Email Address Field-->
+                            <div class="mb-3">
+                                <label for="emailAddress" class="form-label text-dark">Email Address</label>
+                                <input type="email" id="emailAddress" class="form-control" placeholder="Email Address"
+                                    required>
+                                <span class="invalid-feedback">Please type email. Email field is invalid</span>
+                            </div>
+                            <!--Phone Number Field-->
+                            <div class="mb-3">
+                                <label for="phoneNumber" class="form-label text-dark">Phone Number</label>
+                                <input type="text" id="phoneNumber" class="form-control" placeholder="Phone Number: "
+                                    pattern="[0-9]{8}" title="Please enter 8 digits." required>
+                                <span class="invalid-feedback">Please enter 8 digits for the phone number.</span>
+                            </div>
+                            <!--Gender Radio Buttons-->
+                            <div class="mb-3">
+                                <p>Gender</p>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="gender_check"
+                                        id="flexRadioDefault_Male" required>
+                                    <label class="form-check-label" for="flexRadioDefault_Male">
+                                        Male
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="gender_check"
+                                        id="flexRadioDefault_Female" required>
+                                    <label class="form-check-label" for="flexRadioDefault_Female">
+                                        Female
+                                    </label>
+                                </div>
+                            </div>
+                            <!--Age Range Dropdown-->
+                            <div class="input-group mb-3">
+                                <span class="input-group-text bg-secondary-subtle">Age</span>
+                                <select class="form-select" aria-label="Default select" required>
+                                    <option value="" selected disabled>Please select your age range</option>
+                                    <option value="1">12 - 18</option>
+                                    <option value="2">18 - 29</option>
+                                    <option value="3">29 - 48</option>
+                                    <option value="4">48 - 70</option>
+                                    <option value="5">is > 70</option>
+                                </select>
+                                <span class="invalid-feedback">Please choose your age.</span>
+                            </div>
+                            <!--Best Website Checkboxes-->
+                            <div class="row mb-3">
+                                <!--Best website title-->
+                                <div>
+                                    <p class="text-dark">Best Website</p>
+                                </div>
+                                <!--First Column-->
+                                <!--Best website checkboxes, 2 cols in md, lg, 1 in sm-->
+                                <div class="col-sm-12 col-md-6 col-lg-6">
+                                    <!--About Me-->
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" name="best_website_check"
+                                            value="" id="flexCheckDefault_About_Me">
+                                        <label class="form-check-label" for="flexCheckDefault_About_Me">
+                                            About Me
+                                        </label>
+                                    </div>
+                                    <!--Feedback-->
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" name="best_website_check"
+                                            value="" id="flexCheckDefault_FeedBack">
+                                        <label class="form-check-label" for="flexCheckDefault_FeedBack">
+                                            Feedback
+                                        </label>
+                                    </div>
+                                </div>
+                                <!--Second Column-->
+                                <!--Best website checkboxes, 2 cols in md, lg, 1 in sm-->
+                                <div class="col-sm-12 col-md-6 col-lg-6">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" name="best_website_check"
+                                            value="" id="flexCheckDefault_SPSus">
+                                        <label class="form-check-label" for="flexCheckDefault_SPSus">
+                                            SP Sustainability
+                                        </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" name="best_website_check"
+                                            value="" id="flexCheckDefault_MySus">
+                                        <label class="form-check-label" for="flexCheckDefault_MySus">
+                                            My Sustainability
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--Smooth Page Navigation Radio Buttons-->
+                            <div class="mb-3">
+                                <p>Was it easy to find information on the sites?</p>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="confimratin_check"
+                                        id="flexRadioDefault1" required>
+                                    <label class="form-check-label" for="flexRadioDefault1">
+                                        Yes
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="confimratin_check"
+                                        id="flexRadioDefault2" required>
+                                    <label class="form-check-label" for="flexRadioDefault2">
+                                        No
+                                    </label>
+                                </div>
+                            </div>
+                            <!--Overall Rating Range-->
+                            <div class="mb-3">
+                                <label for="customRange" class="form-label">Overall Rating (Scale 1 to 10)</label>
+                                <input type="range" class="form-range" min="0" max="10" id="customRange">
+                            </div>
+                            <!--Feedback Text Area-->
+                            <div class="mb-3">
+                                <label for="FeedbackTextArea" class="form-label">Anything I can improve on please type
+                                    here</label>
+                                <textarea class="form-control" id="FeedbackTextArea" rows="3"
+                                    placeholder="Feedback (optional)"></textarea>
+                            </div>
+                            <!--Submit Button-->
+                            <button type="submit" class="btn btn-primary">
+                                Submit
+                            </button>
+                        </fieldset>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--Switch for any future updates-->
+    <div class="container">
+        <div class="row">
+            <div class="form-check form-switch d-flex justify-content-center fs-5">
+                <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckChecked" checked>
+                <label class="form-check-label" for="flexSwitchCheckChecked">
+                    &nbsp; Interested for Future Updates?
+                </label>
+            </div>
+        </div>
+    </div>
+
+    <!--Contact section-->
+    <div class="container mt-md-4 mt-lg-4 mt-sm-3 mt-3">
+        <div class="row">
+            <!--Contact Me heading-->
+            <!--In sm and xsm, the heading will be centered. More than that will stick to left-->
+            <h2 class="underline-red text-sm-start text-md-start text-lg-start text-center">Contact Me</h2>
+
+            <!--Contact Information for screen size larger than 576px-->
+            <!--Address details-->
+            <div id="Contact-info">
+                <p class="pt-2 fs-5">
+                    NUS High Boarding School <br>
+                    40 Clementi Avenue 1 Singapore 129959
+                </p>
+                <!--Social Media logos-->
+                <nav class="nav-bar">
+                    <div class="container-fluid">
+                        <ul class="nav justify-content-center"> <!--center the logos-->
+                            <!--Instagram Logo-->
+                            <li class="nav-item h2">
+                                <a class="nav-link mx-4 rounded social-media-icon text-dark"
+                                    href="https://instagram.com/_tsh_harry?igshid=ZGUzMzM3NWJiOQ==" target="_blank">
+                                    <i class="bi bi-instagram instagram"></i>
+                                </a>
+                            </li>
+                            <!--Facebook Logo-->
+                            <li class="nav-item h2">
+                                <a class="nav-link mx-4 rounded social-media-icon text-dark"
+                                    href="https://www.facebook.com/profile.php?id=100014946376777&mibextid=ZbWKwL"
+                                    target="_blank">
+                                    <i class="bi bi-facebook facebook"></i>
+                                </a>
+                            </li>
+                            <!--Email Logo-->
+                            <li class="nav-item h2">
+                                <a class="nav-link mx-4 rounded social-media-icon text-dark"
+                                    href="mailto:thihash18.23@ichat.sp.edu.sg" target="_blank">
+                                    <i class="bi bi-envelope email"></i>
+                                </a>
+                            </li>
+                            <!--Telegram Logo-->
+                            <li class="nav-item h2">
+                                <a class="nav-link mx-4 rounded social-media-icon text-dark"
+                                    href="https://t.me/tsh_harry" target="_blank">
+                                    <i class="bi bi-telegram telegram"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+
+            </div>
+
+            <!--Contact Information for screen size smaller than 576px-->
+            <div id="smallContact">
+                <div class="container">
+                    <div class="row">
+                        <div class="col d-flex justify-content-center my-1">
+                            <!-- Button trigger modal -->
+                            <button type="button" class="btn btn-primary p-2" data-bs-toggle="modal"
+                                data-bs-target="#smallContactButton">
+                                Click to Contact Me
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal for small contact info-->
+    <div class="modal fade" id="smallContactButton" tabindex="-1" aria-labelledby="smallContactButtonLabel"
+        aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title fs-5" id="smallContactButtonLabel">Contact Info</h4>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body p-0"><!--p-0 to eliminate unncessary spaces-->
+                    <!--Social Media logos-->
+                    <ul class="nav justify-content-center"> <!--center the logos-->
+                        <!--Instagram Logo-->
+                        <li class="nav-item">
+                            <a class="nav-link rounded text-dark"
+                                href="https://instagram.com/_tsh_harry?igshid=ZGUzMzM3NWJiOQ==" target="_blank">
+                                <i class="bi bi-instagram text-danger h4"></i>
+                            </a>
+                        </li>
+                        <!--Facebook Logo-->
+                        <li class="nav-item">
+                            <a class="nav-link rounded text-dark"
+                                href="https://www.facebook.com/profile.php?id=100014946376777&mibextid=ZbWKwL"
+                                target="_blank">
+                                <i class="bi bi-facebook text-primary h4"></i>
+                            </a>
+                        </li>
+                        <!--Email Logo-->
+                        <li class="nav-item">
+                            <a class="nav-link rounded text-dark" href="mailto:thihash18.23@ichat.sp.edu.sg"
+                                target="_blank">
+                                <i class="bi bi-envelope text-danger h4"></i>
+                            </a>
+                        </li>
+                        <!--Telegram Logo-->
+                        <li class="nav-item">
+                            <a class="nav-link rounded text-dark" href="https://t.me/tsh_harry" target="_blank">
+                                <i class="bi bi-telegram text-info h4"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="modal-footer p-2"><!--p-2 to eliminate unncessary spaces-->
+                    <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Noted!</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="container-fluid bg-warning mt-2">
+        <div class="container-fluid bg-body-tertiary">
+            <div class="row">
+                <p class="text-center pt-3">
+                    <a href="../HTML/index.html" class="My_link text-dark h5">&copy; Thiha Swan Htet &commat; 2023</a>
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous">
+        </script>
+    <script src="../Javascript/general.js"></script><!--Import navbar, form validation-->
+</body>
+
+</html>

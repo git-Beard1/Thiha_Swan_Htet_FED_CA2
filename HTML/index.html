@@ -1,0 +1,1330 @@
+<!--
+
+    Name    : Thiha Swan Htet
+    Date    : 07/08/2023
+
+    FED CA2 Interactive Website
+    Index/About Me Page
+    
+-->
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>About Me</title>
+    <link rel="stylesheet" href="../CSS/General.css">
+    <link rel="stylesheet" href="../CSS/About_Me.css">
+    <link rel="stylesheet" href="../CSS/tic-tac-toe.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+
+    <!-- Copyright Declaration and References
+
+    The reference for the images are cited by comment under the code.
+    
+    The Images are used for educational purposes only. I do not own them, except my 
+    profile picture from About Me Section.
+
+    --> 
+
+</head>
+
+<body class="background-color"> <!--CSS Background color for the whole page-->
+
+    <!--Start of the navigation bar-->
+
+    <!--Padding 0 to take the whole screenwidth for the navbar-->
+
+    <header class="container-fluid sticky-top p-0"> <!--Position sticky for the navbar to be visible while scrolling -->
+
+        <nav class="navbar navbar-expand-lg navbar-background"> <!--navbar background for navbar coloring-->
+
+            <div class="container">
+                <a class="navbar-brand" href="../HTML/index.html" id="navBrand"></a>
+                <!--Title inserted with Javascript-->
+                <!--navBrand id to link with javascript-->
+                <button class="navbar-toggler border-2 border-dark" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#HamburgerMenu" aria-controls="HamburgerMenu" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span> <!--The Hamburger Icon-->
+                </button>
+
+                <div class="collapse navbar-collapse justify-content-end nav-bar" id="HamburgerMenu">
+                    <!--justify-content-end to make the nav-items to right corner-->
+
+                    <ul class="navbar-nav" id="navbar-breakpoint">
+                        <!--navbar-breakpoint css to remove borders when less than 992px-->
+                        <li class="nav-item border border-3 border-light nav-link-box ms-2">
+                            <!--navlink-box to style when hovered. margin left to split the nav boxes-->
+                            <a class="nav-link" href="../HTML/index.html">About Me</a>
+                        </li>
+                        <li class="nav-item border border-3 border-light nav-link-box ms-2">
+                            <a class="nav-link" href="../HTML/My_Sustainability.html">My Sustainability</a>
+                        </li>
+                        <li class="nav-item border border-3 border-light nav-link-box ms-2">
+                            <a class="nav-link" href="../HTML/SP_Sustainability.html">SP Sustainability</a>
+                        </li>
+                        <li class="nav-item border border-3 border-light nav-link-box ms-2">
+                            <a class="nav-link" href="../HTML/Feedback_Form.html">Feedback</a>
+                        </li>
+
+                    </ul>
+                </div>
+
+            </div>
+
+        </nav>
+
+    </header>
+
+    <div> <!--Insert Image Banner-->
+        <img src="../Images/Shrine.jpg" class="img-fluid"
+            alt="A picture of forest on one side and one tree on one side">
+    </div>
+
+    <!--About Me Section-->
+
+    <div class="container-fluid my-md-5 my-lg-5 mt-sm-5 mt-5 bg-danger">
+        <!--Scroll or banner title for About Me section-->
+        <div class="container-fluid bg-body-tertiary">
+            <h1 class="text-center p-3"> <!--center title. padding for some spaces.-->
+                <i class="bi bi-flower3 text-danger"></i>
+                About Me
+            </h1>
+        </div>
+    </div>
+
+    <!--Self introduction-->
+
+    <!--Two columns in md, lg. One column in small.-->
+
+    <div class="container">
+
+        <div class="row mt-sm-4 mt-4">
+            <h2><span class="text-danger fw-bolder">| </span>Self Introduction</h2>
+        </div>
+
+        <div class="row mt-4 card-shadow rounded-4 bg-light">
+            <!--rounded for border radius card-shadow for box shadow-->
+
+            <div class="col-sm-12 col-md-6 col-lg-6">
+                <!--Displays as one column in small breakpoint. Two columns in medium and large breakpoints-->
+                <div class="my-4 text-center"> <!--center the imag. Margins on top and bottom-->
+                    <img src="../Images/Me.jpg" class="w-50 img-fluid rounded-circle"
+                        alt="Picture of author taken at dorm">
+                    <!--img-fluid for responsive image. Rounded-circle for circular image. w-50 for half-size image.-->
+                </div>
+            </div>
+
+            <div class="col-sm-12 col-md-6 col-lg-6 d-flex align-items-center">
+                <!--flex to center text in accordance with the picture.-->
+                <div class="my-4">
+                    <p class="self-introduction text-center">
+                        <!--self-introduction class to change font size with screen dimensions-->
+                        My name is <q><strong>Thiha Swan Htet</strong></q>.
+                        You can call me <q><strong>Harry</strong></q> too. I'm from Myanmar,
+                        and currently studying at Singapore Polytechnic. I'm a first year student
+                        from DIT course, who has a passion for programming and web development.
+                    </p>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+    <!--Education Background-->
+
+    <div class="container my-md-5 my-lg-5 mt-sm-4 mt-4">
+
+        <div class="row">
+            <h2><span class="text-danger fw-bolder">| </span>Education Background</h2>
+        </div>
+
+    </div>
+
+    <!--Then section-->
+
+    <div class="container my-md-5 my-lg-5 mt-sm-2 mt-2">
+
+        <!--Then Heading-->
+
+        <div class="row mb-md-3 mb-lg-3 mt-sm-4 mt-4">
+            <div class="text-center">
+                <p class="h3">
+                    <i class="bi bi-hourglass-bottom"></i> <!--Import icons from bootstrap-->
+                    <span class="text-danger fw-bolder mx-3">| </span> <!--mx to balance space between title and icon-->
+                    Then
+                    <span class="text-danger fw-bolder mx-3"> |</span>
+                    <i class="bi bi-hourglass-top"></i>
+                </p>
+            </div>
+        </div>
+
+        <!--Three cards start-->
+        <!--Three cards, three cols in lg, two top, one bottom in md, one in sm-->
+
+        <div class="row mt-sm-2 mt-2">
+
+            <div class="col-sm-12 col-md-6 col-lg-4 mb-3">
+                <!--margin bottom to have space between cards when stacked in sm breakpoint -->
+
+                <div class="card My_Education_Card_Color border border-2 border-dark flex-column">
+                    <!--My_Education_Card_Color for background color. Flex-column to vertical position-->
+                    <div class="About-Me-cards"> <!--About-Me-cards for scale out animation-->
+                        <img src="../Images/My_Activity_1.jpg" class="card-img-top rounded"
+                            alt="Author's school B.E.H.S(1) Dagon">
+                    </div>
+
+                    <div class="card-body">
+                        <p class="card-text text-center">
+                            <span class="fw-bold">The place of all the beginnings. </span><br>
+                            It was here how I learned all the basics of life.
+                            So many people I have interacted with; bonds
+                            still connected throughout the years. Values and virtues,
+                            and all the things that I need to know to be an outstanding individual.
+                        </p>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="col-sm-12 col-md-6 col-lg-4 mb-3">
+
+                <div class="card My_Education_Card_Color border border-2 border-dark">
+                    <div class="About-Me-cards">
+                        <img src="../Images/My_Activity_2.jpg" class="card-img-top rounded"
+                            alt="A picture of author with the Buddhist Society in Bagan, Myanmar">
+                    </div>
+                    <div class="card-body">
+                        <p class="card-text text-center">
+                            <span class="fw-bold">One of my milestones in life.</span><br>
+                            I was in the Buddhist Society in my ninth grade
+                            to balance my life with the spiritual side. As a group,
+                            we travelled to various temples and places where poverty
+                            reigns. It was the best decision I've ever made to join this
+                            society.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-sm-12 col-md-12 col-lg-4">
+
+                <div class="card My_Education_Card_Color border border-2 border-dark">
+                    <div class="About-Me-cards">
+                        <img src="../Images/My_Activity_3.jpg" class="card-img-top rounded"
+                            alt="A picture of author with his school band">
+                    </div>
+
+                    <div class="card-body">
+                        <p class="card-text text-center">
+                            <span class="fw-bold">Music is my passion.</span><br>
+                            I was also a lead drummer throughout my academic years.
+                            It was hard to harmonize all the notes as one whole masterpiece,
+                            however, the power of chopsticks grant me special powers to be able
+                            to perform outstanding miracle.
+                        </p>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+
+
+    <!--Now Section-->
+
+    <div class="container my-md-5 my-lg-5 mt-sm-4 mt-4">
+
+        <!--Now Section-->
+
+        <div class="row">
+            <div class="mb-md-3 mb-lg-3 my-sm-3 my-3 text-center">
+                <p class="h3">
+                    <i class="bi bi-hourglass-bottom"></i>
+                    <span class="text-danger fw-bolder mx-3">| </span>
+                    Now
+                    <span class="text-danger fw-bolder mx-3"> |</span>
+                    <i class="bi bi-hourglass-top"></i>
+                </p>
+            </div>
+        </div>
+
+        <!--Two cards start-->
+        <!--Two cols in lg, md. One col in sm breakpoint-->
+
+        <div class="row">
+
+            <div class="col-sm-12 col-md-6 col-lg-6 mb-3">
+
+                <div class="card My_Education_Card_Color border border-2 border-dark">
+
+                    <div class="About-Me-cards">
+                        <img src="../Images/My_Activity_5.jpg" class="card-img-top rounded"
+                            alt="Picture of author with SOC Ambassadors at SingaporePoly">
+                    </div>
+
+                    <div class="card-body">
+                        <p class="card-text text-center">
+                            <span class="fw-bold">SOC Ambassadors</span><br>
+                            I became part of SOC Ambassadors in Admin team.
+                            I particapated in the first event "YCEP", Youth
+                            Cyber Exploration Programme, where we volunteer to
+                            pass knowledge on cybersecurity to secondary school students.
+                            The picture was taken by our Personal Tutor,
+                            <q><strong>Mr. Edwin Lim</strong></q>.
+                        </p>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="col-sm-12 col-md-6 col-lg-6 mb-3">
+
+                <div class="card My_Education_Card_Color border border-2 border-dark">
+
+                    <div class="About-Me-cards">
+                        <img src="../Images/My_Activity_6.jpg" class="card-img-top rounded image"
+                            alt="A picture of Author at Poly 50 SingaporePoly">
+                    </div>
+
+                    <div class="card-body">
+                        <p class="card-text text-center">
+                            <span class="fw-bold">Poly 50 Marathon</span><br>
+                            A very fun event where you have to run 50 laps
+                            passing batons to your teammates. As someone
+                            who rarely exercise, it was a bit tiring.
+                            However, upon seeing people who used up all their
+                            energy for their respective teams, I was motivated to
+                            keep up my spirit and stomp my feet on track.
+                        </p>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <!--My Interest Section-->
+
+    <div class="container-fluid my-md-5 my-lg-5 mt-sm-4 mt-4 bg-danger">
+        <div class="container-fluid bg-body-tertiary">
+            <h1 class="text-center p-3">
+                My Interest
+                <i class="bi bi-nintendo-switch text-info"></i>
+            </h1>
+        </div>
+    </div>
+
+    <!--3 tabs for 3 interests-->
+
+    <div class="container my-md-5 my-lg-5 mt-sm-4 mt-4">
+
+        <div class="row">
+
+            <div class="My_Education_Card_Color border border-2 border-dark rounded-3">
+
+                <nav class="p-3"> <!--Navigation Tab Menu-->
+                    <div class="nav nav-tabs interest-nav" id="nav-tab" role="tablist">
+                        <!--interest-nav to fix border bottom-->
+                        <!--Music tab-->
+                        <button class="nav-link active" id="nav-music-tab" data-bs-toggle="tab"
+                            data-bs-target="#nav-music" type="button" role="tab" aria-controls="nav-music"
+                            aria-selected="true">Music
+                        </button>
+                        <!--Football tab-->
+                        <button class="nav-link" id="nav-football-tab" data-bs-toggle="tab"
+                            data-bs-target="#nav-football" type="button" role="tab" aria-controls="nav-football"
+                            aria-selected="false">Football
+                        </button>
+                        <!--Movies tab-->
+                        <button class="nav-link" id="nav-movies-tab" data-bs-toggle="tab" data-bs-target="#nav-movies"
+                            type="button" role="tab" aria-controls="nav-movies" aria-selected="false">Movies
+                        </button>
+
+                    </div>
+                </nav>
+
+                <!--Tab Contents-->
+                <!--First Tab, Music-->
+                <div class="tab-content" id="nav-tabContent">
+
+                    <div class="tab-pane fade show active" id="nav-music" role="tabpanel"
+                        aria-labelledby="nav-music-tab" tabindex="0">
+
+                        <div class="container">
+                            <!--Music Heading-->
+                            <div class="row pt-sm-2 pt-2">
+                                <h2 class="text-center">
+                                    <span class="underline-red">
+                                        <i class="bi bi-music-note-list text-warning"></i>
+                                        Music
+                                    </span>
+                                </h2>
+                            </div>
+
+                            <!--Two columns in md, lg. One col in sm-->
+                            <div class="row d-flex justify-content-center align-items-center">
+
+                                <!--About Music Descriptions and Tables-->
+                                <div
+                                    class="col-sm-12 col-md-6 col-lg-6 mb-3 pt-3 d-flex justify-content-center align-items-center">
+                                    <div>
+                                        <!--Heading-->
+                                        <h4 class="text-center"><span class="text-danger fw-bolder">| </span>
+                                            About Music
+                                            <i class="bi bi-music-note text-info"></i>
+                                        </h4>
+                                        <!--Description-->
+                                        <p class="text-center pt-md-3 pt-lg-3">
+                                            They say music is a very powerful language
+                                            that connects people from all over the
+                                            world. Music is my courage when I am stressed.
+                                            The beat and the soothing vocals
+                                            makes me feel relaxed and calm. Have a listen to
+                                            my favourite song by Kana-Boon.
+                                        </p>
+                                        <!--Table heading and responsive table-->
+                                        <p class="fs-5 text-center">List of My Top Song Genres</p>
+                                        <div class="table-responsive"> <!--Responsive Table-->
+                                            <table class="table table-warning table-bordered text-center">
+                                                <thead>
+                                                    <tr>
+                                                        <th scope="col">First Column</th>
+                                                        <th scope="col">Second Column</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td>Pop</td>
+                                                        <td class="table-info">Math Rock</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="table-info">J-pop</td>
+                                                        <td>EDM</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Rock</td>
+                                                        <td class="table-info">Classic</td>
+                                                    </tr>
+                                                </tbody>
+                                                <tfoot>
+                                                    <tr>
+                                                        <td>Total Genres : </td>
+                                                        <td>6</td>
+                                                    </tr>
+                                                </tfoot>
+                                            </table>
+                                        </div>
+
+                                    </div>
+
+                                </div>
+
+                                <!--Second Column. Spotify Iframe-->
+                                <div class="col-sm-12 col-md-6 col-md-6">
+                                    <div class="d-flex justify-content-center align-items-center">
+                                        <!--flex to center in accordance with text-->
+                                        <iframe style="border-radius:12px"
+                                            src="https://open.spotify.com/embed/track/5Jrx1gCnBJTR9KGYMRdGkJ?utm_source=generator"
+                                            width="550" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; 
+                                            picture-in-picture" loading="lazy" class="pt-3" id = "spotify">
+                                        </iframe>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <!--Second Tab, Football-->
+                    <div class="tab-pane fade" id="nav-football" role="tabpanel" aria-labelledby="nav-football-tab"
+                        tabindex="0">
+
+                        <div class="container">
+
+                            <div class="row pt-sm-2 pt-2">
+                                <!--Football Heading-->
+                                <h2 class="text-center">
+                                    <span class="underline-red">
+                                        Football
+                                        <i class="bi bi-clipboard2-heart text-success"></i>
+                                    </span>
+                                </h2>
+                            </div>
+
+                            <div class="row d-flex justify-content-center align-items-center">
+                                <!--First Column, picture-->
+                                <div class="col-sm-12 col-md-6 col-lg-6 mb-3 pt-3">
+
+                                    <figure class="d-flex justify-content-center align-items-center">
+                                        <img src="../Images/footballme.jpg"
+                                            class="w-100 img-fluid border border-4 border-dark rounded-3"
+                                            alt="Me and friends at a football match">
+                                    </figure>
+
+                                </div>
+
+                                <!--Second column, description-->
+                                <!--About Football Description and responsive table-->
+                                <div class="col-sm-12 col-md-6 col-md-6 pt-md-3 pt-lg-3">
+
+                                    <div>
+                                        <!--About football heading-->
+                                        <h4 class="text-center"><span class="text-danger fw-bolder">| </span>
+                                            About Football
+                                            <i class="bi bi-activity text-danger"></i>
+                                        </h4>
+                                        <!--About Football Description-->
+                                        <p class="text-center pt-md-3 pt-lg-3">
+                                            A world-wide popular sport adorned by every human beings, including
+                                            me.
+                                            Watching famous players dribbling the ball to pass through others,
+                                            and performing head tricks are really pleasing, to the point where
+                                            you want to try it out yourself.
+                                        </p>
+                                        <!--Table heading and responsive table-->
+                                        <p class="fs-5 text-center">List of My Top Activities</p>
+
+                                        <div class="table-responsive">
+                                            <table class="table table-warning table-bordered text-center">
+                                                <thead>
+                                                    <tr>
+                                                        <th scope="col">First Column</th>
+                                                        <th scope="col">Second Column</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td>Football</td>
+                                                        <td class="table-info">Board Games</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="table-info">Books</td>
+                                                        <td>Running</td>
+                                                    </tr>
+                                                </tbody>
+                                                <tfoot>
+                                                    <tr>
+                                                        <td>Total Activities : </td>
+                                                        <td>4</td>
+                                                    </tr>
+                                                </tfoot>
+                                            </table>
+                                        </div>
+
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <!--Third Tab, Movies-->
+                    <div class="tab-pane fade" id="nav-movies" role="tabpanel" aria-labelledby="nav-movies-tab"
+                        tabindex="0">
+
+                        <div class="container">
+
+                            <div class="row pt-sm-2 pt-2">
+                                <!--Movies heading-->
+                                <h2 class="text-center">
+                                    <span class="underline-red">
+                                        <i class="bi bi-camera-reels text-warning"></i>
+                                        Movies
+                                    </span>
+                                </h2>
+                            </div>
+
+                            <div class="row d-flex justify-content-center align-items-center">
+
+                                <!--First Column-->
+                                <!--About Movies Description and Responsive Table-->
+                                <div
+                                    class="col-sm-12 col-md-6 col-lg-6 mb-3 pt-3 d-flex justify-content-center align-items-center">
+                                    <div>
+                                        <!--About Movies heading-->
+                                        <h4 class="text-center"><span class="text-danger fw-bolder">| </span>
+                                            About Movies
+                                            <i class="bi bi-film text-info"></i>
+                                        </h4>
+                                        <!--About Movies Description-->
+                                        <p class="text-center pt-md-3 pt-lg-3">
+                                            Ready your popcorns and sodas. Raise the volume high in your
+                                            TV room, and throw yourself onto the comfy sofa. The taste of
+                                            watching movies late at night is irrestible. A quiet nightime
+                                            is the best time of the day to enjoy your list of favourite movies.
+                                            So, why not?
+                                        </p>
+                                        <!--Table heading and responsive table-->
+                                        <p class="fs-5 text-center">List of My Top Movies</p>
+                                        <div class="table-responsive">
+                                            <table class="table table-warning table-bordered text-center">
+                                                <thead>
+                                                    <tr>
+                                                        <th scope="col">First Column</th>
+                                                        <th scope="col">Second Column</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td>Real Steel</td>
+                                                        <td class="table-info">Interstellar</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="table-info">Spiderman-Into-The-SpiderVerse
+                                                        </td>
+                                                        <td>Social Network</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>5. The Imitation Game</td>
+                                                        <td class="table-info">6. Avengers: Inifinity War</td>
+                                                    </tr>
+                                                </tbody>
+                                                <tfoot>
+                                                    <tr>
+                                                        <td>Total Movies : </td>
+                                                        <td>6</td>
+                                                    </tr>
+                                                </tfoot>
+                                            </table>
+
+                                        </div>
+
+                                    </div>
+
+                                </div>
+
+                                <!--Second Column, Oppenheimer Youtube Iframe-->
+                                <div class="col-sm-12 col-md-6 col-md-6">
+
+                                    <div class="d-flex justify-content-center align-items-center mb-2">
+                                        <iframe width="500" height="315" src="https://www.youtube.com/embed/uYPbbksJxIg"
+                                            title="YouTube video player" allow="accelerometer; autoplay; 
+                                            clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                            allowfullscreen class="rounded-3 ratio ratio-16x9">
+                                        </iframe>
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- My Values Section-->
+
+    <!--My Values Heading-->
+    <div class="container-fluid my-md-5 my-lg-5 mt-4 mt-sm-4 bg-danger">
+        <div class="container-fluid bg-body-tertiary">
+            <h1 class="text-center p-3">
+                My Values
+            </h1>
+        </div>
+    </div>
+
+    <!--My Values Cards Carousels, Description and responsive table-->
+    <div class="container my-md-5 my-lg-5">
+
+        <div class="row border border-2 border-dark rounded my-md-5 my-lg-5 mt-sm-4 mt-4 My_Education_Card_Color">
+            <!--First Column-->
+            <!--My Values Cards Carousels-->
+            <div class="col-sm-12 col-md-6 col-lg-6 d-flex justify-content-center align-items-center">
+                <!--Carousels-->
+                <div id="myValuesCarouselCards" class="carousel slide p-3" data-bs-ride="carousel">
+                    <button class="carousel-control-prev" type="button" data-bs-target="#myValuesCarouselCards"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon bg-primary" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#myValuesCarouselCards"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon bg-primary" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                    <!--Carousel-->
+                    <div class="carousel-inner">
+                        <!--Integrity-->
+                        <div class="carousel-item active">
+                            <!--Card inside carousel-->
+                            <div class="card">
+                                <div class="About-Me-cards">
+                                    <img src="../Images/Integrity.jpeg" class="card-img-top rounded-3"
+                                        alt="Integrity logo symbolized by a balance">
+                                    <!--
+                                        Image Reference:
+                                        https://www.pinterest.com/pin/112730796914659211/
+                                    -->
+                                </div>
+
+                                <div class="card-body">
+                                    <h4 class="card-title text-center">Integrity</h4>
+                                    <p class="card-text text-center">
+                                        As a human being, we must step up for what is right.
+                                        We have to commit ourselves to moral or ethical choices.
+                                        Afterall, what good are we if we cannot uphold values.
+                                    </p>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                        <!--Creativity-->
+                        <div class="carousel-item">
+
+                            <div class="card">
+                                <div class="About-Me-cards">
+                                    <img src="../Images/Creativity.jpeg" class="card-img-top rounded-3"
+                                        alt="Creativity logo symbolized by gears">
+                                    <!--
+                                        Image Reference:
+                                        https://www.pinterest.com/pin/724235183840104986/
+                                    -->
+                                </div>
+
+                                <div class="card-body">
+                                    <h4 class="card-title text-center">Creativity</h4>
+                                    <p class="card-text text-center">
+                                        Billions of possibilities, waiting to be discovered.
+                                        Let your imagination run wild and free. The satisfaction
+                                        of creating something new is priceless. Be
+                                        <q><strong>Open-minded</strong></q>
+                                    </p>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                        <!--Freedom-->
+                        <div class="carousel-item">
+
+                            <div class="card">
+                                <div class="About-Me-cards">
+                                    <img src="../Images/Freedom.jpeg" class="card-img-top rounded-3"
+                                        alt="Freedom logo symbolized by a hawk">
+                                    <!--
+                                        Image Reference:
+                                        https://www.pinterest.com/pin/767019380308387290/
+                                    -->
+                                </div>
+
+                                <div class="card-body">
+                                    <h4 class="card-title text-center">Freedom</h4>
+                                    <p class="card-text text-center">
+                                        Ever feel relief when something is over? That's freedom for me.
+                                        The ability to do anything you want, anywhere, anytime,
+                                        without any restrictions. Be <q><strong>free</strong></q> and be happy.
+                                    </p>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+
+                        <!--Gratitude-->
+                        <div class="carousel-item">
+
+                            <div class="card">
+                                <div class="About-Me-cards">
+                                    <img src="../Images/Gratitude.jpeg" class="card-img-top rounded-3 values-cards"
+                                        alt="Gratitude logo symbolized by a postcard hanged by balloons">
+                                    <!--
+                                        Image Reference:
+                                        https://www.pinterest.com/pin/112730796914705127/
+                                    -->
+                                </div>
+
+                                <div class="card-body">
+                                    <h4 class="card-title text-center">Gratitude</h4>
+                                    <p class="card-text text-center">
+                                        An appreciation to everyone who I have interacted with in my course of
+                                        life.
+                                        Thank you for the guidance. Thank you for caring me. Thank you for
+                                        the love and everything.
+                                    </p>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+
+                        <!--Friendship-->
+                        <div class="carousel-item">
+
+                            <div class="card">
+                                <div class="About-Me-cards">
+                                    <img src="../Images/Friendship.jpeg" class="card-img-top rounded-3 values-cards"
+                                        alt="An icon with three friends shouldering each other">
+                                    <!--
+                                        Image Reference:
+                                        https://www.pinterest.com/pin/112730796933998072/
+                                    -->
+                                </div>
+
+                                <div class="card-body">
+                                    <h4 class="card-title text-center">Friendship</h4>
+                                    <p class="card-text text-center">
+                                        Along the journey of life, we have met several differnt
+                                        people and made memories together. The infinite bonds
+                                        we have with them is inseparable and powerful. Treasure!
+                                    </p>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+
+                        <!--Adventure-->
+                        <div class="carousel-item">
+
+                            <div class="card">
+                                <div class="About-Me-cards">
+                                    <img src="../Images/Adventure.jpeg" class="card-img-top rounded-3 values-cards"
+                                        alt="An icon with a mountain, a hot air balloon and a cloud">
+                                    <!--
+                                        Image Reference:
+                                        https://www.pinterest.com/pin/112730796914606963/
+                                    -->
+                                </div>
+
+                                <div class="card-body">
+                                    <h4 class="card-title text-center">Adventure</h4>
+                                    <p class="card-text text-center">
+                                        I love adventures. They make me feel excited and thrilled.
+                                        Getting out once in a while to explore something new is
+                                        always a good idea. Now,...it's
+                                        <q><strong> Adventure Time!</strong></q>
+                                    </p>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!--Second Column-->
+            <div class="col-sm-12 col-md-6 col-lg-6">
+
+                <div class="p-3">
+                    <!--Introducing My Values Heading-->
+                    <h3 class="text-center">
+                        <i class="bi bi-person-bounding-box text-info"></i>
+                        Introducing My Values
+                    </h3>
+                    <!--Introducing My Values Description-->
+                    <p class="text-center p-md-3 p-lg-3 pt-sm-2 pt-2">
+                        Values are the guiding principles that shape our beliefs,
+                        actions, and interactions with the world around us. They serve
+                        as the moral compass that steers us through life's challenges
+                        and opportunities, helping us make decisions aligned with our
+                        core beliefs.
+                    </p>
+                    <!--My Values Responsive Table-->
+                    <div class="table-responsive">
+                        <table class="table table-warning table-bordered text-center">
+                            <thead>
+                                <tr>
+                                    <th scope="col">First Column</th>
+                                    <th scope="col">Second Column</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td class="table-info">Integrity</td>
+                                    <td>Creativity</td>
+                                </tr>
+                                <tr>
+                                    <td>Freedom</td>
+                                    <td class="table-info">Gratitude</td>
+                                </tr>
+                                <tr>
+                                    <td class="table-info">Friendship</td>
+                                    <td>Adventure</td>
+                                </tr>
+                            </tbody>
+                            <tfoot>
+                                <tr>
+                                    <td>Total Values : </td>
+                                    <td>6</td>
+                                </tr>
+                            </tfoot>
+                        </table>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <!--My Personality Section-->
+    <div class="container-fluid mt-md-5 mt-lg-5 mt-sm-4 mt-4 bg-danger">
+
+        <div class="container-fluid bg-body-tertiary">
+            <h1 class="text-center p-3">
+                My Personality
+            </h1>
+        </div>
+    </div>
+
+    <div class="container my-md-5 my-lg-5 mt-sm-4 mt-4 border border-2 border-dark rounded My_Education_Card_Color">
+        <!--First Row-->
+        <div class="row d-flex justify-content-center align-items-center p-3">
+            <!--First Column-->
+            <div class="col-sm-12 col-md-6 col-lg-6">
+                <!--My Personality Character Picture-->
+                <!--Linked with modal when pressed-->
+                <div>
+                    <figure
+                        class="d-flex justify-content-center align-items-center border border-2 border-dark rounded-3 bg-dark-subtle About-Me-cards">
+                        <img src="../Images/INFJ.png" class="w-50 img-fluid" alt="Advocate INFJ" data-bs-toggle="modal"
+                            data-bs-target="#myPersonalityModal"><!--Image Link with modal-->
+                        <!--
+                            Image Reference:
+                            https://www.pinterest.com/pin/434878907769989723/
+                        -->
+                    </figure>
+                </div>
+
+            </div>
+
+            <!--Second Column-->
+            <div class="col-sm-12 col-md-6 col-lg-6 d-flex justify-content-center align-items-center">
+                <div>
+                    <!--My Personality Heading-->
+                    <h4 class="text-center">
+                        <span class="underline-red">Advocate (INFJ)</span>
+                    </h4>
+                    <!--My Personality Description-->
+                    <p class="text-center pt-3">
+                        According to my personality test, I am an Advocate (INFJ).
+                        It is a type of person who approaches life with deep thoughts and
+                        imagination. They value integrity and are rarely satisfied until
+                        they have done what they know to be right. They are also a bit
+                        sensitive, but pour a lot of care and energy into their relationships.
+                        <span class="text-success fw-bold">Click on the image to find out more!</span>
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <!--Second Row-->
+        <!--Strength and Weakness Progress Tables-->
+        <div class="row">
+            <!--Heading-->
+            <h4 class="text-center"><span class="underline-red">My Strength and Weakness</span></h4>
+
+            <!--First Column-->
+            <div class="col-sm-12 col-md-6 col-lg-6">
+                <!--Strength Table Heading-->
+                <h4 class="text-sm-start text-md-center text-lg-center pt-md-2 pt-lg-2 pt-sm-3 pt-3">
+                    <span class="text-danger fw-bold">| </span>
+                    <span class="underline-red">Strength</span>
+                </h4>
+                <!--Strength Resonsive Table-->
+                <div class="table-responsive">
+                    <table class="table table-hover border border-1 border-dark my-3">
+                        <thead>
+                            <tr class="table-info">
+                                <th scope = "col" class="text-center">Type</th>
+                                <th scope = "col" class="text-center">Progess</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr class="table-warning">
+                                <td class="text-center">Creativity</td>
+                                <td class="text-center">
+                                    <div class="progress" role="progressbar" aria-label="progressLabel"
+                                        aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">
+                                        <div class="progress-bar progress-color fw-bolder" style="width: 80%">
+                                            80%
+                                        </div><!--progress-color linked with css for linear gradient ocean color-->
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr class="table-info">
+                                <td class="text-center">Insightful</td>
+                                <td class="text-center">
+                                    <div class="progress" role="progressbar" aria-label="progressLabel"
+                                        aria-valuenow="70" aria-valuemin="0" aria-valuemax="100">
+                                        <div class="progress-bar progress-color fw-bolder" style="width: 70%">
+                                            70%
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr class="table-warning">
+                                <td class="text-center">Principled</td>
+                                <td class="text-center">
+                                    <div class="progress" role="progressbar" aria-label="progressLabel"
+                                        aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
+                                        <div class="progress-bar progress-color fw-bolder" style="width: 75%">
+                                            75%
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr class="table-info">
+                                <td class="text-center">Passionate</td>
+                                <td class="text-center">
+                                    <div class="progress" role="progressbar" aria-label="progressLabel"
+                                        aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">
+                                        <div class="progress-bar progress-color fw-bolder" style="width: 90%">
+                                            90%
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+                        </tbody>
+                        <tfoot>
+                            <tr class="text-center table-warning">
+                                <td>
+                                    Total Types: 4
+                                </td>
+                                <td>
+                                    Total Progress: 315%
+                                </td>
+                            </tr>
+                        </tfoot>
+                    </table>
+                </div>
+
+            </div>
+
+            <div class="col-sm-12 col-md-6 col-lg-6">
+
+                <!--Weakness Table Heading-->
+                <h4 class="text-sm-start text-md-center text-lg-center pt-2">
+                    <span class="underline-red">Weakness</span>
+                    <span class="text-danger fw-bold"> |</span>
+                </h4>
+                <!--Weakness Responsive Table-->
+                <div class="table-responsive">
+                    <table class="table table-hover border border-1 border-dark my-3">
+                        <thead>
+                            <tr class="table-info">
+                                <th scope = "col" class="text-center">Type</th>
+                                <th scope = "col" class="text-center">Progess</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr class="table-warning">
+                                <td class="text-center">Unique</td>
+                                <td class="text-center">
+                                    <div class="progress" role="progressbar" aria-label="progressLabel"
+                                        aria-valuenow="60" aria-valuemin="0" aria-valuemax="100">
+                                        <div class="progress-bar progress-color fw-bolder" style="width: 60%">
+                                            60%
+                                        </div><!--progress-color linked with css for linear gradient ocean color-->
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr class="table-info">
+                                <td class="text-center">Burnout</td>
+                                <td class="text-center">
+                                    <div class="progress" role="progressbar" aria-label="progressLabel"
+                                        aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
+                                        <div class="progress-bar progress-color fw-bolder" style="width: 75%">
+                                            75%
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr class="table-warning">
+                                <td class="text-center">Perfectionist</td>
+                                <td class="text-center">
+                                    <div class="progress" role="progressbar" aria-label="progressLabel"
+                                        aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">
+                                        <div class="progress-bar progress-color fw-bolder" style="width: 100%">
+                                            100%
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr class="table-info">
+                                <td class="text-center">Restraint</td>
+                                <td class="text-center">
+                                    <div class="progress" role="progressbar" aria-label="progressLabel"
+                                        aria-valuenow="30" aria-valuemin="0" aria-valuemax="100">
+                                        <div class="progress-bar progress-color fw-bolder" style="width: 30%">
+                                            30%
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+                        </tbody>
+                        <tfoot>
+                            <tr class="text-center table-warning">
+                                <td>
+                                    Total Types: 4
+                                </td>
+                                <td>
+                                    Total Progress: 265%
+                                </td>
+                            </tr>
+                        </tfoot>
+                    </table>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <!--Game Section-->
+    <div class="container-fluid my-md-5 my-lg-5 mt-sm-4 mt-4 bg-danger">
+        <!--Game Section Heading-->
+        <div class="container-fluid bg-body-tertiary">
+            <h1 class="text-center p-3">
+                Game Section
+            </h1>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <div class="background">
+                    <section>
+                        <!--Tic-tac-toe heading-->
+                        <h2 class="text-center mt-2">Tic Tac Toe</h2>
+                    </section>
+                    <!--Display turn-->
+                    <div class="display p-md-3 p-lg-3 pb-sm-2 pb-2">
+                        Player <span class="display-player playerX">X</span>'s turn
+                    </div>
+                    <!--The game board cells looped by javascript-->
+                    <div class="board"></div>
+                    <!--Announcement-->
+                    <div class="display winner hide pt-3"></div>
+                    <!--Reset button-->
+                    <div
+                        class="controls mb-md-5 mb-lg-5 mb-sm-4 mb-4 d-flex justify-content-center align-items-center mt-2">
+                        <button id="reset" class="rounded-3 p-2 text-light">
+                            Restart Game
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--Modals-->
+    <div class="modal fade" id="myPersonalityModal" tabindex="-1" aria-labelledby="myPersonalityModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered"> <!-- Vertically center the modal -->
+            <!-- Modal Content starts -->
+            <div class="modal-content bg-secondary">
+                <!--Modal heading-->
+                <div class="modal-header text-info">
+                    <h1 class="modal-title fs-5 text-center" id="myPersonalityModalLabel">The 16 Personalities</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    <!--Cross Close Button-->
+                </div>
+                <!--Modal Body (Paragraph)-->
+                <div class="modal-body text-light">
+                    <p class="text-center">
+                        <cite>
+                            The 16 personalities test is a free online test that helps you to understand yourself
+                            better.
+                            It is based on the Myers-Briggs Type Indicator (MBTI) personality test.
+                            There are 16 personality types in total, each with their own unique combination of traits.
+                            Press the button below to take the test!
+                        </cite>
+                        <!--
+                        Article Reference
+                        https://www.16personalities.com/
+                    -->
+                    </p>
+                </div>
+                <!--Modal footer close button-->
+                <div class="modal-footer">
+                    <a class="btn btn-danger" href="https://www.16personalities.com/free-personality-test" role="button"
+                        target="_blank">
+                        Take the test
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <!--Contact Me heading-->
+            <!--In sm and xsm, the heading will be centered. More than that will stick to left-->
+            <h2 class="underline-red text-sm-start text-md-start text-lg-start text-center">Contact Me</h2>
+
+            <!--Contact Information for screen size larger than 576px-->
+            <!--Address details-->
+            <div id="Contact-info">
+                <p class="pt-2 fs-5">
+                    NUS High Boarding School <br>
+                    40 Clementi Avenue 1 Singapore 129959
+                </p>
+                <!--Social Media logos-->
+                <nav class="nav-bar">
+                    <div class="container-fluid">
+                        <ul class="nav justify-content-center"> <!--center the logos-->
+                            <!--Instagram Logo-->
+                            <li class="nav-item h2">
+                                <a class="nav-link mx-4 rounded social-media-icon text-dark"
+                                    href="https://instagram.com/_tsh_harry?igshid=ZGUzMzM3NWJiOQ==" target="_blank">
+                                    <i class="bi bi-instagram instagram"></i>
+                                </a>
+                            </li>
+                            <!--Facebook Logo-->
+                            <li class="nav-item h2">
+                                <a class="nav-link mx-4 rounded social-media-icon text-dark"
+                                    href="https://www.facebook.com/profile.php?id=100014946376777&mibextid=ZbWKwL"
+                                    target="_blank">
+                                    <i class="bi bi-facebook facebook"></i>
+                                </a>
+                            </li>
+                            <!--Email Logo-->
+                            <li class="nav-item h2">
+                                <a class="nav-link mx-4 rounded social-media-icon text-dark"
+                                    href="mailto:thihash18.23@ichat.sp.edu.sg" target="_blank">
+                                    <i class="bi bi-envelope email"></i>
+                                </a>
+                            </li>
+                            <!--Telegram Logo-->
+                            <li class="nav-item h2">
+                                <a class="nav-link mx-4 rounded social-media-icon text-dark"
+                                    href="https://t.me/tsh_harry" target="_blank">
+                                    <i class="bi bi-telegram telegram"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+
+            </div>
+
+            <!--Contact Information for screen size smaller than 576px-->
+            <div id="smallContact">
+                <div class="container">
+                    <div class="row">
+                        <div class="col d-flex justify-content-center my-1">
+                            <!-- Button trigger modal -->
+                            <button type="button" class="btn btn-primary p-2" data-bs-toggle="modal"
+                                data-bs-target="#smallContactButton">
+                                Click to Contact Me
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal for small contact info-->
+    <div class="modal fade" id="smallContactButton" tabindex="-1" aria-labelledby="smallContactButtonLabel"
+        aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title fs-5" id="smallContactButtonLabel">Contact Info</h4>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body p-0"><!--p-0 to eliminate unncessary spaces-->
+                    <!--Social Media logos-->
+                    <ul class="nav justify-content-center"> <!--center the logos-->
+                        <!--Instagram Logo-->
+                        <li class="nav-item">
+                            <a class="nav-link rounded text-dark"
+                                href="https://instagram.com/_tsh_harry?igshid=ZGUzMzM3NWJiOQ==" target="_blank">
+                                <i class="bi bi-instagram text-danger h4"></i>
+                            </a>
+                        </li>
+                        <!--Facebook Logo-->
+                        <li class="nav-item">
+                            <a class="nav-link rounded text-dark"
+                                href="https://www.facebook.com/profile.php?id=100014946376777&mibextid=ZbWKwL"
+                                target="_blank">
+                                <i class="bi bi-facebook text-primary h4"></i>
+                            </a>
+                        </li>
+                        <!--Email Logo-->
+                        <li class="nav-item">
+                            <a class="nav-link rounded text-dark" href="mailto:thihash18.23@ichat.sp.edu.sg"
+                                target="_blank">
+                                <i class="bi bi-envelope text-danger h4"></i>
+                            </a>
+                        </li>
+                        <!--Telegram Logo-->
+                        <li class="nav-item">
+                            <a class="nav-link rounded text-dark" href="https://t.me/tsh_harry" target="_blank">
+                                <i class="bi bi-telegram text-info h4"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="modal-footer p-2"><!--p-2 to eliminate unncessary spaces-->
+                    <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Noted!</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--Footer-->
+    <footer class="container-fluid bg-warning mt-2">
+        <div class="container-fluid bg-body-tertiary">
+            <div class="row">
+                <p class="text-center pt-3">
+                    <a href="../HTML/index.html" class="My_link text-dark h5">&copy; Thiha Swan Htet &commat;
+                        2023</a> <!--Link to About Me page-->
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous">
+        </script>
+    <script src="../Javascript/tic-tac-toe.js"></script><!--Import Tic Tac Toe-->
+    <script src="../Javascript/general.js"></script><!--Import navbar, form validation-->
+</body>
+
+</html>

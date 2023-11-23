@@ -1,0 +1,1198 @@
+<!--
+
+    Name    : Thiha Swan Htet
+    Date    : 07/08/2023
+
+    FED CA2 Interactive Website
+    My Sustainability Page
+    
+-->
+
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>My_Sustainability</title>
+    <link rel="stylesheet" href="../CSS/General.css">
+    <link rel="stylesheet" href="../CSS/My_Sustainability.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+
+    <!-- Copyright Declaration and References
+
+    The reference for the images are cited by comment under the code.
+    
+    The Images are used for educational purposes only. I do not own them, except my 
+    profile picture from About Me Section.
+
+    --> 
+
+</head>
+
+<body class="background-color"> <!--CSS Background color for the whole page-->
+
+    <!--Start of the navigation bar-->
+
+    <!--Padding 0 to take the whole screenwidth for the navbar-->
+
+    <header class="container-fluid sticky-top p-0"> <!--Position sticky for the navbar to be visible while scrolling -->
+
+        <nav class="navbar navbar-expand-lg navbar-background"> <!--navbar background for navbar coloring-->
+
+            <div class="container">
+                <a class="navbar-brand" href="../HTML/index.html" id="navBrand"></a>
+                <!--Title inserted with Javascript-->
+                <!--navBrand id to link with javascript-->
+                <button class="navbar-toggler border-2 border-dark" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#HamburgerMenu" aria-controls="HamburgerMenu" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span> <!--The Hamburger Icon-->
+                </button>
+
+                <div class="collapse navbar-collapse justify-content-end nav-bar" id="HamburgerMenu">
+                    <!--justify-content-end to make the nav-items to right corner-->
+
+                    <ul class="navbar-nav" id="navbar-breakpoint">
+                        <!--navbar-breakpoint css to remove borders when less than 992px-->
+                        <li class="nav-item border border-3 border-light nav-link-box ms-2">
+                            <!--navlink-box to style when hovered. margin left to split the nav boxes-->
+                            <a class="nav-link" href="../HTML/index.html">About Me</a>
+                        </li>
+                        <li class="nav-item border border-3 border-light nav-link-box ms-2">
+                            <a class="nav-link" href="../HTML/My_Sustainability.html">My Sustainability</a>
+                        </li>
+                        <li class="nav-item border border-3 border-light nav-link-box ms-2">
+                            <a class="nav-link" href="../HTML/SP_Sustainability.html">SP Sustainability</a>
+                        </li>
+                        <li class="nav-item border border-3 border-light nav-link-box ms-2">
+                            <a class="nav-link" href="../HTML/Feedback_Form.html">Feedback</a>
+                        </li>
+
+                    </ul>
+                </div>
+
+            </div>
+
+        </nav>
+
+    </header>
+
+    <!--Image Banner-->
+    <div>
+        <img src="../Images/Save_The_Earth_Banner.jpg" class="img-fluid"
+            alt="A picture of forest on one side and one tree on one side">
+        <!--
+            Image Reference:
+            https://www.nature.org/en-us/about-us/who-we-are/our-science/three-ways-to-save-our-planet/
+        -->
+    </div>
+
+    <!--Quote-->
+    <div class="container my-md-5 my-lg-5 mt-sm-3 mt-3">
+        <div class="row">
+            <div class="col">
+                <!--Quote starts, centered-->
+                <div class="d-flex justify-content-center align-items-center">
+                    <blockquote>
+                        <p class="fs-2"><!--Display for bigger font size-->
+                            <i class="bi bi-quote"></i> <br> <!--Import icons-->
+                            &nbsp; &nbsp; &nbsp;Problems cannot be solved <br>
+                            &nbsp; at the same level of awareness <br>
+                            &nbsp; &nbsp; &nbsp;that created them.
+                            <i class="bi bi-chat-quote"></i> <br><br>
+                            - Albert Einstein <!--Quote by Albert Einstein-->
+                        </p>
+                    </blockquote>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--Sustainability-->
+    <div class="container my-md-5 my-lg-5">
+        <!--Sustainability Heading-->
+        <div class="row">
+            <h1 class="display-3"><span class="fw-bold text-success">| </span>Sustainability</h1>
+        </div>
+        <!--Save the earth heading-->
+        <div class="row my-md-5 my-lg-5 my-sm-4 my-4">
+            <h2 class="underline-green text-center display-4">
+                <span class="text-success">Save </span>
+                <span class="text-danger">The</span>
+                <span class="text-info">Earth</span>
+            </h2>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <!--What We Can Do Heading-->
+            <h2 class="display-6">
+                <span class="text-success fw-bold">| </span>
+                What We Can Do
+            </h2>
+            <!--Sustainability Tips-->
+            <div class="container bg-color rounded-3 card-shadow my-md-5 my-lg-5 mt-sm-3 mt-3">
+
+                <div class="row my-md-5 my-lg-5 my-sm-4 my-4">
+                    <!--Sustainability tips heading-->
+                    <h2 class="text-center">
+                        <span class="underline-green">
+                            Sustainability Tips
+                            <i class="bi bi-lightbulb text-warning"></i>
+                        </span>
+                    </h2>
+                </div>
+
+                <div class="row d-flex justify-content-center align-items-center">
+                    <!--First Column-->
+                    <!--What is Sustainability heading, description and responsive table-->
+                    <div
+                        class="col-sm-12 col-md-6 col-lg-6 mb-3 pt-md-3 pt-lg-3 d-flex justify-content-center align-items-center">
+                        <div>
+                            <!--What is Sustainability? Heading-->
+                            <h4 class="text-center"><span class="text-success fw-bolder">| </span>
+                                What is Sustainability?
+                                <i class="bi bi-question-diamond-fill"></i>
+                            </h4>
+                            <!--What is Sustainability? Description-->
+                            <p class="text-center pt-3">
+                                With the advance in technology, the world is becoming more and more modernised.
+                                On the other hand, it can also be said that our world is becoming more and
+                                more polluted too. It is our earth that makes our lives beautiful, better
+                                and blissful. Just like how our parents take care of us, we should also
+                                take care of our planet. Fortunately, there are many ways to be sustainable.
+                            </p>
+                            <!--List of Activities Table heading and responsive table-->
+                            <p class="fs-5 text-center">List of Activities</p>
+                            <div class="table-responsive">
+                                <table class="table table-warning table-bordered">
+                                    <thead>
+                                        <tr class = "text-center">
+                                            <th scope="col">First Column</th>
+                                            <th scope="col">Second Column</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>1. Public Transportation</td>
+                                            <td class="table-info">2. Growing Trees</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="table-info">3. Recycle</td>
+                                            <td>4. Energy Conservation</td>
+                                        </tr>
+                                    </tbody>
+                                    <tfoot>
+                                        <tr>
+                                            <td>5. Plastics Free</td>
+                                            <td class="table-info">6. Zero Waste</td>
+                                        </tr>
+                                    </tfoot>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                    <!--Second Column-->
+                    <!--Carousel Cards on ways to be sustainable-->
+                    <div class="col-sm-12 col-md-6 col-lg-6">
+                        <!--Carousels-->
+                        <div class="d-flex justify-content-center align-items-center">
+
+                            <div id="mySustainabilityCarouselCards" class="carousel slide p-3" data-bs-ride="carousel">
+
+                                <button class="carousel-control-prev" type="button"
+                                    data-bs-target="#mySustainabilityCarouselCards" data-bs-slide="prev">
+                                    <span class="carousel-control-prev-icon bg-primary" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Previous</span> <!--bg-primary to color the button-->
+                                </button>
+                                <button class="carousel-control-next" type="button"
+                                    data-bs-target="#mySustainabilityCarouselCards" data-bs-slide="next">
+                                    <span class="carousel-control-next-icon bg-primary" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Next</span> <!--bg-primary to color the button-->
+                                </button>
+
+                                <!--Carousel cards-->
+                                <div class="carousel-inner">
+                                    <!--Public Transportation-->
+                                    <div class="carousel-item active">
+                                        <!--card inside carousels-->
+                                        <div class="card">
+                                            <div class="My-Sustainability-cards">
+                                                <!--A class to division for image scale out-->
+                                                <img src="../Images/Sustainability_card1.jpeg"
+                                                    class="card-img-top rounded-3 course_cards w-100"
+                                                    alt="A train icon">
+                                                <!--
+                                                    Image Reference:
+                                                    https://www.pinterest.com/pin/906349493740854946/
+                                                -->
+                                            </div>
+
+                                            <div class="card-body">
+                                                <h5 class="card-title text-center">Public Transportation</h5>
+                                                <p class="card-text text-center">
+                                                    Transportation is one of the main contributors to the emission of
+                                                    carbon dioxide. According to the statics,
+                                                    <cite>
+                                                        <q>
+                                                            97 percent of the global warming
+                                                            potential of all greenhouse gas emissions are from
+                                                            transportation.
+                                                        </q>
+                                                    </cite>
+                                                </p>
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+
+                                    <!--Growing Trees-->
+                                    <div class="carousel-item">
+
+                                        <div class="card">
+                                            <div class="My-Sustainability-cards">
+                                                <!--A class to division for image scale out-->
+                                                <img src="../Images/Sustainability_card2.jpeg"
+                                                    class="card-img-top rounded-3 course_cards w-100" alt="A tree icon">
+                                                <!--
+                                                    Image Reference:
+                                                    https://www.pinterest.com/pin/195695546299579683/
+                                                -->
+                                            </div>
+
+                                            <div class="card-body">
+                                                <h5 class="card-title text-center">Growing Trees</h5>
+                                                <p class="card-text text-center">
+                                                    The abdundance of greenhouse gases leads to the increase of global
+                                                    temperature.
+                                                    However, trees can help address this issue. This is done by
+                                                    absorbing C0<sub>2</sub> in the atmosphere and storing it in its
+                                                    wood.
+                                                </p>
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+
+                                    <!--Recycle-->
+                                    <div class="carousel-item">
+
+                                        <div class="card">
+                                            <div class="My-Sustainability-cards">
+                                                <!--A class to division for image scale out-->
+                                                <img src="../Images/Sustainability_card3.jpeg"
+                                                    class="card-img-top rounded-3 course_cards w-100"
+                                                    alt="Recycling Symbol Icon">
+                                                <!--
+                                                        Image Reference:
+                                                        https://www.pinterest.com/pin/112730796915166206/
+                                                -->
+                                            </div>
+
+                                            <div class="card-body">
+                                                <h5 class="card-title text-center">Recycle</h5>
+                                                <p class="card-text text-center">
+                                                    Reusable items should be discarded at the assigned recycling bins.
+                                                    If not,
+                                                    the landfills will be filled up and pollute the environment. As they
+                                                    are eliminated through inceneration, toxic gases are also released.
+                                                </p>
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+
+                                    <!--Energy Conservation-->
+                                    <div class="carousel-item">
+
+                                        <div class="card">
+                                            <div class="My-Sustainability-cards">
+                                                <!--A class to division for image scale out-->
+                                                <img src="../Images/Sustainability_card4.jpeg"
+                                                    class="card-img-top rounded-3 course_cards w-100"
+                                                    alt="Energy Conservation icon (a circle with lightning symbol)">
+                                                <!--
+                                                    Image Reference:
+                                                    https://www.pinterest.com/pin/386746686763593753/
+                                                -->
+                                            </div>
+
+                                            <div class="card-body">
+                                                <h5 class="card-title text-center">Energy Conservation</h5>
+                                                <p class="card-text text-center">
+                                                    Fossils fuels, such as coal, oil, and natural gas, are the main
+                                                    sources of energy.
+                                                    These resources are used up everyday for our needs. As they are
+                                                    unrenewable resources,
+                                                    they will surely run out one day.
+                                                </p>
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+
+                                    <!--Plastic Free-->
+                                    <div class="carousel-item">
+
+                                        <div class="card">
+                                            <div class="My-Sustainability-cards">
+                                                <!--A class to division for image scale out-->
+                                                <img src="../Images/Sustainability_card5.jpeg"
+                                                    class="card-img-top rounded-3 course_cards w-100"
+                                                    alt="Reusable bag icon with bread and vegetables in it">
+                                                <!--
+                                                    Image Reference:
+                                                    https://www.pinterest.com/pin/112730796914707100/
+                                                -->
+                                            </div>
+
+                                            <div class="card-body">
+                                                <h5 class="card-title text-center">Plastic Free</h5>
+                                                <p class="card-text text-center">
+                                                    Plastics are non-biodegradable materials. Therefore, it will take
+                                                    hundreds
+                                                    of years for plastic to decompose. Furthermore, poisonous gases are
+                                                    released into the atmosphere upon burning.
+                                                </p>
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+
+                                    <!--Zero Waste-->
+                                    <div class="carousel-item">
+
+                                        <div class="card">
+                                            <div class="My-Sustainability-cards">
+                                                <!--A class to division for image scale out-->
+                                                <img src="../Images/Sustainability_card6.jpeg"
+                                                    class="card-img-top rounded-3 course_cards w-100"
+                                                    alt="A picture of a leaf wrapped in circle with Zero Waste Heading beside">
+                                                <!--
+                                                    Image Reference:
+                                                    https://www.pinterest.com/pin/1115837245150571766/
+                                                -->
+                                            </div>
+
+                                            <div class="card-body">
+                                                <h5 class="card-title text-center">Zero Waste</h5>
+                                                <p class="card-text text-center">
+                                                    Producing goods and services require a wide range of raw materials.
+                                                    A lot of the resources will be depleted if not managed carefully.
+                                                    This will lead the future generations to suffer from the lack
+                                                    and shortage of resources.
+                                                </p>
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <!--Actions on Global Scale Section-->
+    <div class="container">
+        <div class="row mt-sm-4 mt-4">
+            <!--Actions on Global Scale Section-->
+            <h2 class="display-6">
+                <span class="text-success fw-bold">| </span>
+                Actions on Global Scale
+            </h2>
+            <!--The World in Action-->
+            <div class="container bg-color rounded-3 card-shadow my-md-5 my-lg-5 mt-sm-3 mt-3">
+                <div class="row my-md-5 my-lg-5 mt-sm-4 mt-4">
+                    <h2 class="text-center">
+                        <span class="underline-green">
+                            The World In Action
+                            <i class="bi bi-globe-americas text-success"></i>
+                        </span>
+                    </h2>
+                </div>
+                <!--Carousels, modal cards-->
+                <div class="row d-flex justify-content-center align-items-center">
+                    <!--First Column-->
+                    <div class="col-sm-12 col-md-6 col-lg-6 mb-3">
+
+                        <div class="d-flex justify-content-center align-items-center">
+                            <!--Carousel-->
+                            <div id="worldActionsCarouselCards" class="carousel slide pt-3      "
+                                data-bs-ride="carousel">
+
+                                <button class="carousel-control-prev" type="button"
+                                    data-bs-target="#worldActionsCarouselCards" data-bs-slide="prev">
+                                    <span class="carousel-control-prev-icon bg-primary" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Previous</span>
+                                </button>
+                                <button class="carousel-control-next" type="button"
+                                    data-bs-target="#worldActionsCarouselCards" data-bs-slide="next">
+                                    <span class="carousel-control-next-icon bg-primary" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Next</span>
+                                </button>
+
+                                <div class="carousel-inner">
+
+                                    <!--First Card, UNSDGs-->
+                                    <div class="carousel-item active">
+
+                                        <div class="card">
+
+                                            <div class="My-Sustainability-cards">
+                                                <!--A class to division for image scale out-->
+                                                <img src="../Images/UNSDGs-logo.png"
+                                                    class="card-img-top rounded-3 course_cards w-100"
+                                                    alt="The UNSDGs logo" data-bs-toggle="modal"
+                                                    data-bs-target="#UnionsModal1"><!--Link with modals on click-->
+                                                <!--
+                                                        Image Reference:
+                                                        https://www.pinterest.com/pin/637400153528149785/
+                                                    -->
+                                            </div>
+
+                                            <div class="card-body">
+                                                <h5 class="card-title text-center">UNSDGs</h5>
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+
+                                    <!--Second Card, UNICEF-->
+                                    <div class="carousel-item">
+
+                                        <div class="card">
+
+                                            <div class="My-Sustainability-cards">
+                                                <!--A class to division for image scale out-->
+                                                <img src="../Images/UNICEF-logo.jpeg"
+                                                    class="card-img-top rounded-3 course_cards w-100" alt="Unicef logo"
+                                                    data-bs-toggle="modal"
+                                                    data-bs-target="#UnionsModal2"><!--Link with modals on click-->
+                                                <!--
+                                                        Image Reference:
+                                                        https://www.pinterest.com/pin/548594798329121510/
+                                                    -->
+                                            </div>
+
+                                            <div class="card-body">
+                                                <h5 class="card-title text-center">UNICEF</h5>
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+
+                                    <!--Third Card, National Geographics-->
+                                    <div class="carousel-item">
+
+                                        <div class="card">
+                                            <div class="My-Sustainability-cards">
+                                                <!--A class to division for image scale out-->
+                                                <img src="../Images/National_Geographics-logo.png"
+                                                    class="card-img-top rounded-3 course_cards w-100"
+                                                    alt="National Geographics Logo" data-bs-toggle="modal"
+                                                    data-bs-target="#UnionsModal3"><!--Link with modals on click-->
+                                                <!--
+                                                        Image Reference:
+                                                        https://www.pinterest.com/pin/943152346944278987/
+                                                    -->
+                                            </div>
+
+                                            <div class="card-body">
+                                                <h5 class="card-title text-center">National Geographic</h5>
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+
+                                    <!--Fourth Card, WHO-->
+                                    <div class="carousel-item">
+
+                                        <div class="card">
+
+                                            <div class="My-Sustainability-cards">
+                                                <!--A class to division for image scale out-->
+                                                <img src="../Images/WHO-logo.png"
+                                                    class="card-img-top rounded-3 course_cards w-100" alt="WHO logo"
+                                                    data-bs-toggle="modal" data-bs-target="#UnionsModal4">
+                                                <!--Link with modals on click-->
+                                                <!--
+                                                    Image Reference:
+                                                    https://www.pinterest.com/pin/1025835621344514436/
+                                                -->
+                                            </div>
+
+                                            <div class="card-body">
+                                                <h5 class="card-title text-center">WHO</h5>
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+
+                                    <!--Fifth Card, WRI-->
+                                    <div class="carousel-item">
+
+                                        <div class="card">
+
+                                            <div class="My-Sustainability-cards">
+                                                <!--A class to division for image scale out-->
+                                                <img src="../Images/WRI-logo.jpeg"
+                                                    class="card-img-top rounded-3 course_cards w-100"
+                                                    alt="WRI logo with WRI Brazil as a heading" data-bs-toggle="modal"
+                                                    data-bs-target="#UnionsModal5"><!--Link with modals on click-->
+                                                <!--
+                                                    Image Reference:
+                                                    https://www.iis-rio.org/en/partners/world-resources-institute-wri/
+                                                -->
+                                            </div>
+
+                                            <div class="card-body">
+                                                <h5 class="card-title text-center">WRI</h5>
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+
+                                    <!--Sixth Card, WWF-->
+                                    <div class="carousel-item">
+
+                                        <div class="card">
+
+                                            <div class="My-Sustainability-cards">
+                                                <!--A class to division for image scale out-->
+                                                <img src="../Images/WWF-logo.jpeg"
+                                                    class="card-img-top rounded-3 course_cards w-100"
+                                                    alt="WWF logo with a panda and WWF as a heading"
+                                                    data-bs-toggle="modal"
+                                                    data-bs-target="#UnionsModal6"><!--Link with modals on click-->
+                                                <!--
+                                                    Image Reference:
+                                                    https://www.pinterest.com/pin/343469909058993444/
+                                                -->
+                                            </div>
+
+                                            <div class="card-body">
+                                                <h5 class="card-title text-center">WWF</h5>
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <!--Second Column-->
+                    <!--Commitment to sustainability heading, description, and a responsive table-->
+                    <div class="col-sm-12 col-md-6 col-lg-6 pt-3 d-flex justify-content-center align-items-center">
+
+                        <div>
+                            <!--Commitment to sustainability-->
+                            <h4 class="text-center"><span class="text-success fw-bolder">| </span>
+                                Commitment to Sustainability
+                                <i class="bi bi-bar-chart-line-fill text-info"></i>
+                            </h4>
+                            <!--Commitment to sustainability description-->
+                            <p class="text-center pt-3">
+                                To confront sustainability challenges, various organisations have come together to
+                                address the issues. The United Nations has set 17 Sustainable Development Goals
+                                to be achieved by 2030. Unicef has also take part in the movement by promoting
+                                sustainability in various aspects. Furthermore, the World Health Organisation,
+                                National Geographics, and many more have also joined the movement.
+                                <span class="text-success fw-bold">Click each carousel to find out more about the
+                                    organisations.</span><!--Colored text to prompt user to click the images for modals-->
+                            </p>
+                            <!--Green organisations Heading and responsive table-->
+                            <p class="fs-5 text-center">Green Organisations</p>
+                            <div class="table-responsive">
+                                <table class="table table-warning table-bordered">
+                                    <thead>
+                                        <tr class = "text-center">
+                                            <th scope="col">First Column</th>
+                                            <th scope="col">Second Column</th>
+                                        </tr>
+                                    <tbody>
+                                        <tr>
+                                            <td>1. UNSDGs</td>
+                                            <td class="table-info">2. UNICEF</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="table-info">3. National Geographics</td>
+                                            <td>4. World Health Organisation</td>
+                                        </tr>
+                                        <tr>
+                                            <td>5. World Resources Institute</td>
+                                            <td class="table-info">6. World Wildlife Fund</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <!--My Sustainability Section-->
+    <div class="container">
+        <!--My Sustainability Heading-->
+        <div class="row mt-sm-4 mt-4">
+            <h2 class="display-6">
+                <span class="text-success fw-bold">| </span>
+                My Sustainability
+            </h2>
+        </div>
+        <!--My Sustainability Three cards-->
+        <div class="row my-md-5 my-lg-5 mt-sm-3 mt-3">
+
+            <!--Three columns in lg, two and one in md, one in sm-->
+            <!--The First Column-->
+            <div class="col-sm-12 col-md-6 col-lg-4 mb-3 mx-auto">
+                <!--Card-->
+                <div class="card border border-2 border-success">
+                    <!--Image-->
+                    <div class="My-Sustainability-cards"><!--A class to division for image scale out-->
+                        <img src="../Images/My_Sustainability_card_1.jpg" class="img-fluid" alt="MRT train picture">
+                    </div>
+                    <!--Description-->
+                    <div class="card-body text-center">
+                        I love sleep, so my mom often had to drive me school.
+                        However, ever since I learnt the carbon emissions, I decided to take MRT.
+                        Not only has it help me to become more sustainable, it also helps me build good
+                        hygienes as I have to wake up early to catch the train.
+                    </div>
+                </div>
+            </div>
+
+            <!--The Second Column-->
+            <div class="col-sm-12 col-md-6 col-lg-4 mb-3 mx-auto">
+                <!--Card-->
+                <div class="card border border-2 border-success">
+                    <!--Image-->
+                    <div class="My-Sustainability-cards"><!--A class to division for image scale out-->
+                        <img src="../Images/My_Sustainability_card_2.jpg" class="img-fluid"
+                            alt="A picture of a neat and tidy study room">
+                    </div>
+                    <!--Description-->
+                    <div class="card-body text-center">
+                        I always make sure that I turn off the lights, fans and
+                        air-conditioners. I used to open the air-conditioners all day long to
+                        keep myself comfortable. But now, I opened the windows across my
+                        study table. The feeling of cold breeze softening against cheeks is the best feeling.
+                    </div>
+                </div>
+            </div>
+            <!--The Third Column-->
+            <div class="col-sm-12 col-md-6 col-lg-4 mb-3 mx-auto">
+                <!--Card-->
+                <div class="card border border-2 border-success">
+                    <!--Image-->
+                    <div class="My-Sustainability-cards"><!--A class to division for image scale out-->
+                        <img src="../Images/My_Sustainability_card_3.jpg" class="img-fluid"
+                            alt="A picture of reusable bag">
+                    </div>
+                    <!--Description-->
+                    <div class="card-body text-center">
+                        I used to pack items with plastics bag.
+                        But now, I carry a reusable or crouch bag with me.
+                        Plastics are non biodegradable. However, paper bags are recyclable.
+                        They can used for composting, meaning they can convert
+                        organic materials to rich-soil nutrition when discarded.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--My Sustainability Table-->
+    <div class="container">
+
+        <div class="row">
+            <!--My Sustainability Table Heading-->
+            <h2 class="text-center display-6">
+                <span class="underline-green">My Sustainability Table</span>
+            </h2>
+            <!--My Sustainability Table-->
+            <div class="col-12 my-md-4 my-lg-4 mt-sm-4 mt-4">
+                <div class="table-responsive">
+                    <table class="table text-center table-bordered table-hover">
+                        <!--Text center to center all table contents-->
+                        <thead>
+                            <tr>
+                                <th rowspan="2">Serial</th>
+                                <!--Rowspan to merge 2 rows to compensate Frequency 2 rows-->
+                                <th rowspan="2">Description</th>
+                                <!--Rowspan to merge 2 rows to compensate Frequency 2 rows-->
+                                <th colspan="5">Frequency</th>
+                                <!--Colspan to merge 5 columns for the progress on scale of 1 to 5-->
+                            </tr>
+                            <tr> <!--This row is to show the scale of 1 to 5-->
+                                <th>1</th>
+                                <th>2</th>
+                                <th>3</th>
+                                <th>4</th>
+                                <th>5</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>1</td>
+                                <td>Public Transportation</td>
+                                <td colspan="5" class="progress-block"></td> <!--Value 5 to cover all blocks-->
+                            </tr>
+                            <tr>
+                                <td>2</td>
+                                <td>Growing Trees</td>
+                                <td colspan="2" class="progress-block"></td>
+                                <td></td> <!--Empty blocks for no progress-->
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>3</td>
+                                <td>Recycling</td>
+                                <td colspan="4" class="progress-block"></td>
+                                <td></td> <!--Empty block for no progress-->
+                            </tr>
+                            <tr>
+                                <td>4</td>
+                                <td>Energy Conservation</td>
+                                <td colspan="5" class="progress-block"></td>
+                            </tr>
+                            <tr>
+                                <td>5</td>
+                                <td>Zero Waste</td>
+                                <td colspan="3" class="progress-block"></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>6</td>
+                                <td>Plastics Free</td>
+                                <td colspan="5" class="progress-block"></td>
+                            </tr>
+                            <tr>
+                                <td>7</td>
+                                <td>Educate and Advocate</td>
+                                <td colspan="4" class="progress-block"></td>
+                                <td></td> <!--Empty block for no progress-->
+                            </tr>
+                        </tbody>
+                        <tfoot>
+                            <tr>
+                                <td>Total : 7</td>
+                                <td>Events : 7</td>
+                                <td colspan = "5">Total Frequency : 28</td>
+                            </tr>
+                        </tfoot>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--Modals-->
+
+    <!--Unions Modals-->
+
+    <!--UNSDGs Modal-->
+    <div class="modal fade" id="UnionsModal1" tabindex="-1" aria-labelledby="UnionsModal1Label" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered"> <!-- Vertically center the modal -->
+            <!-- Modal Content starts -->
+            <div class="modal-content bg-secondary">
+                <!--Modal heading-->
+                <div class="modal-header text-info">
+                    <h1 class="modal-title fs-5 text-center" id="UnionsModal1Label">The UNSDGs</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    <!--Cross Close Button-->
+                </div>
+                <!--Modal Body (Paragraph)-->
+                <div class="modal-body text-light">
+                    <p class="text-center">
+                        <cite>
+                            The UNSDGs are a collection of 17 interlinked goals designed to be a "blueprint to achieve a
+                            better and more sustainable future for all. The 1 7 goals were adopted to tackle
+                            global challenges such as health improvement, poverty, inequality, climate change,
+                            environmental degradation, peace and justice.
+                        </cite>
+                        <!--
+                        Article Reference
+                        https://sdgs.un.org/goals
+                    -->
+                    </p>
+                </div>
+                <!--Modal footer close button-->
+                <div class="modal-footer">
+                    <a class="btn btn-success" href="https://sdgs.un.org/goals" role="button" target="_blank">
+                        Learn More
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--UNICEF Modal-->
+    <div class="modal fade" id="UnionsModal2" tabindex="-1" aria-labelledby="UnionsModal2Label" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered"> <!-- Vertically center the modal -->
+            <!-- Modal Content starts -->
+            <div class="modal-content bg-secondary">
+                <!--Modal heading-->
+                <div class="modal-header text-info">
+                    <h1 class="modal-title fs-5 text-center" id="UnionsModal2Label">UNICEF</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    <!--Cross Close Button-->
+                </div>
+                <!--Modal Body (Paragraph)-->
+                <div class="modal-body text-light">
+                    <p class="text-center">
+                        <cite>
+                            UNICEF was established in the aftermath of World War II
+                            to help children who are victims of that conflict. It reaches
+                            out to whichever child in need, be it in times of war or peace.
+                            What they work for is noble and they have been doing it for
+                            more than 70 years. Nothing is more important than the
+                            well-being of children.
+                        </cite>
+                        <!--
+                        Article Reference
+                        https://help.unicef.org/?country=SG&&&&&gad=1&gclid=CjwKCAjw_aemBhBLEiwAT98FMuj5SwP-9i-LdvG2NUNOB5Gt4a2Ob0HlxlCRrjtzC8WMql54yDRGkBoCqXAQAvD_BwE&gclsrc=aw.ds
+                    -->
+                    </p>
+                </div>
+                <!--Modal footer close button-->
+                <div class="modal-footer">
+                    <a class="btn btn-success"
+                        href="https://help.unicef.org/?country=SG&&&&&gad=1&gclid=CjwKCAjw_aemBhBLEiwAT98FMuj5SwP-9i-LdvG2NUNOB5Gt4a2Ob0HlxlCRrjtzC8WMql54yDRGkBoCqXAQAvD_BwE&gclsrc=aw.ds"
+                        role="button" target="_blank">
+                        Learn More
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--National Geographics Modal-->
+    <div class="modal fade" id="UnionsModal3" tabindex="-1" aria-labelledby="UnionsModal3Label" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered"> <!-- Vertically center the modal -->
+            <!-- Modal Content starts -->
+            <div class="modal-content bg-secondary">
+                <!--Modal heading-->
+                <div class="modal-header text-info">
+                    <h1 class="modal-title fs-5 text-center" id="UnionsModal3Label">National Geographic</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    <!--Cross Close Button-->
+                </div>
+                <!--Modal Body (Paragraph)-->
+                <div class="modal-body text-light">
+                    <p class="text-center">
+                        <cite>
+                            National Geographic is a non-profit organization
+                            that uses the power of science, exploration, education
+                            and storytelling to illuminate and protect the wonder of our
+                            world. Through articles and mesmerizing photography,
+                            they raise awareness for the planet's most pressing
+                            challenges.
+                        </cite>
+                        <!--
+                            Article Reference
+                            https://education.nationalgeographic.org/resource/sustainability/
+                        -->
+                    </p>
+                </div>
+                <!--Modal footer close button-->
+                <div class="modal-footer">
+                    <a class="btn btn-success" href="https://education.nationalgeographic.org/resource/sustainability/"
+                        role="button" target="_blank">
+                        Learn More
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--World Health Organization Modal-->
+    <div class="modal fade" id="UnionsModal4" tabindex="-1" aria-labelledby="UnionsModal4Label" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered"> <!-- Vertically center the modal -->
+            <!-- Modal Content starts -->
+            <div class="modal-content bg-secondary">
+                <!--Modal heading-->
+                <div class="modal-header text-info">
+                    <h1 class="modal-title fs-5 text-center" id="UnionsModal4Label">World Health Organisation</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    <!--Cross Close Button-->
+                </div>
+                <!--Modal Body (Paragraph)-->
+                <div class="modal-body text-light">
+                    <p class="text-center">
+                        <cite>
+                            The World Health Organization (WHO) is reknowned for its
+                            work in the field of public health. It is a specialized
+                            organisation where the member states agree to work together
+                            to respond to health emergencies and to achieve the highest
+                            attainable level of health for all people.
+                        </cite>
+                        <!--
+                            Article Reference
+                            https://www.who.int/about
+                        -->
+                    </p>
+                </div>
+                <!--Modal footer close button-->
+                <div class="modal-footer">
+                    <a class="btn btn-success" href="https://www.who.int/about" role="button" target="_blank">
+                        Learn More
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--World's Resources Institute Modal-->
+    <div class="modal fade" id="UnionsModal5" tabindex="-1" aria-labelledby="UnionsModal5Label" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered"> <!-- Vertically center the modal -->
+            <!-- Modal Content starts -->
+            <div class="modal-content bg-secondary">
+                <!--Modal heading-->
+                <div class="modal-header text-info">
+                    <h1 class="modal-title fs-5 text-center" id="UnionsModal5Label">World Resources Institute</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    <!--Cross Close Button-->
+                </div>
+                <!--Modal Body (Paragraph)-->
+                <div class="modal-body text-light">
+                    <p class="text-center">
+                        <cite>
+                            WRI is a global research organization that spans more than 60 countries.
+                            The institute focuses by using research-based approaches to tackle
+                            people's essential needs. They work with governments, businesses, and
+                            civil society to build transformative solutions that protect the earth
+                            and improve people's lives.
+                        </cite>
+                        <!--
+                            Article Reference
+                            https://www.wri.org/
+                        -->
+                    </p>
+                </div>
+                <!--Modal footer close button-->
+                <div class="modal-footer">
+                    <a class="btn btn-success" href="https://www.wri.org/" role="button" target="_blank">
+                        Learn More
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--World Wildlife Fund Modal-->
+    <div class="modal fade" id="UnionsModal6" tabindex="-1" aria-labelledby="UnionsModal6Label" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered"> <!-- Vertically center the modal -->
+            <!-- Modal Content starts -->
+            <div class="modal-content bg-secondary">
+                <!--Modal heading-->
+                <div class="modal-header text-info">
+                    <h1 class="modal-title fs-5 text-center" id="UnionsModal6Label">World Wildlife Fund</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    <!--Cross Close Button-->
+                </div>
+                <!--Modal Body (Paragraph)-->
+                <div class="modal-body text-light">
+                    <p class="text-center">
+                        <cite>
+                            Founded in Singapore, WWF encourages individuals,
+                            communities and businesses to make a positive
+                            change in their lifestyle to help conserve nature
+                            and the environment. They work with governments,
+                            and other non-governmental organizations to protect
+                            the biodiversity.
+                        </cite>
+                        <!--
+                            Article Reference
+                            https://www.wwf.sg/about-us/
+                        -->
+                    </p>
+                </div>
+                <!--Modal footer close button-->
+                <div class="modal-footer">
+                    <a class="btn btn-success" href="https://www.wwf.sg/about-us/" role="button" target="_blank">
+                        Learn More
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <!--Contact Me heading-->
+            <!--In sm and xsm, the heading will be centered. More than that will stick to left-->
+            <h2 class="underline-red text-sm-start text-md-start text-lg-start text-center">Contact Me</h2>
+
+            <!--Contact Information for screen size larger than 576px-->
+            <!--Address details-->
+            <div id="Contact-info">
+                <p class="pt-2 fs-5">
+                    NUS High Boarding School <br>
+                    40 Clementi Avenue 1 Singapore 129959
+                </p>
+                <!--Social Media logos-->
+                <nav class="nav-bar">
+                    <div class="container-fluid">
+                        <ul class="nav justify-content-center"> <!--center the logos-->
+                            <!--Instagram Logo-->
+                            <li class="nav-item h2">
+                                <a class="nav-link mx-4 rounded social-media-icon text-dark"
+                                    href="https://instagram.com/_tsh_harry?igshid=ZGUzMzM3NWJiOQ==" target="_blank">
+                                    <i class="bi bi-instagram instagram"></i>
+                                </a>
+                            </li>
+                            <!--Facebook Logo-->
+                            <li class="nav-item h2">
+                                <a class="nav-link mx-4 rounded social-media-icon text-dark"
+                                    href="https://www.facebook.com/profile.php?id=100014946376777&mibextid=ZbWKwL"
+                                    target="_blank">
+                                    <i class="bi bi-facebook facebook"></i>
+                                </a>
+                            </li>
+                            <!--Email Logo-->
+                            <li class="nav-item h2">
+                                <a class="nav-link mx-4 rounded social-media-icon text-dark"
+                                    href="mailto:thihash18.23@ichat.sp.edu.sg" target="_blank">
+                                    <i class="bi bi-envelope email"></i>
+                                </a>
+                            </li>
+                            <!--Telegram Logo-->
+                            <li class="nav-item h2">
+                                <a class="nav-link mx-4 rounded social-media-icon text-dark"
+                                    href="https://t.me/tsh_harry" target="_blank">
+                                    <i class="bi bi-telegram telegram"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+
+            </div>
+
+            <!--Contact Information for screen size smaller than 576px-->
+            <div id="smallContact">
+                <div class="container">
+                    <div class="row">
+                        <div class="col d-flex justify-content-center my-1">
+                            <!-- Button trigger modal -->
+                            <button type="button" class="btn btn-primary p-2" data-bs-toggle="modal"
+                                data-bs-target="#smallContactButton">
+                                Click to Contact Me
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal for small contact info-->
+    <div class="modal fade" id="smallContactButton" tabindex="-1" aria-labelledby="smallContactButtonLabel"
+        aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title fs-5" id="smallContactButtonLabel">Contact Info</h4>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body p-0"><!--p-0 to eliminate unncessary spaces-->
+                    <!--Social Media logos-->
+                    <ul class="nav justify-content-center"> <!--center the logos-->
+                        <!--Instagram Logo-->
+                        <li class="nav-item">
+                            <a class="nav-link rounded text-dark"
+                                href="https://instagram.com/_tsh_harry?igshid=ZGUzMzM3NWJiOQ==" target="_blank">
+                                <i class="bi bi-instagram text-danger h4"></i>
+                            </a>
+                        </li>
+                        <!--Facebook Logo-->
+                        <li class="nav-item">
+                            <a class="nav-link rounded text-dark"
+                                href="https://www.facebook.com/profile.php?id=100014946376777&mibextid=ZbWKwL"
+                                target="_blank">
+                                <i class="bi bi-facebook text-primary h4"></i>
+                            </a>
+                        </li>
+                        <!--Email Logo-->
+                        <li class="nav-item">
+                            <a class="nav-link rounded text-dark" href="mailto:thihash18.23@ichat.sp.edu.sg"
+                                target="_blank">
+                                <i class="bi bi-envelope text-danger h4"></i>
+                            </a>
+                        </li>
+                        <!--Telegram Logo-->
+                        <li class="nav-item">
+                            <a class="nav-link rounded text-dark" href="https://t.me/tsh_harry" target="_blank">
+                                <i class="bi bi-telegram text-info h4"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="modal-footer p-2"><!--p-2 to eliminate unncessary spaces-->
+                    <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Noted!</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--Footer-->
+    <footer class="container-fluid bg-warning mt-2">
+        <div class="container-fluid bg-body-tertiary">
+            <div class="row">
+                <p class="text-center pt-3">
+                    <a href="../HTML/index.html" class="My_link text-dark h5">&copy; Thiha Swan Htet &commat;
+                        2023</a> <!--Link to About Me page-->
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous">
+        </script>
+    <script src="../Javascript/general.js"></script><!--Import navbar, form validation-->
+</body>
+
+</html>

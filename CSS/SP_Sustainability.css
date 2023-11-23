@@ -1,0 +1,63 @@
+@charset "utf-8";
+
+/*
+
+    Name    : Thiha Swan Htet
+    Date    : 07/08/2023
+
+    FED CA2 Interactive Website
+    SP Sustainability Page CSS
+
+*/
+
+/* Copyright Declaration and References
+
+The reference for the images are cited by comment under the code.
+
+
+The Images are used for educational purposes only. I do not own them, except my 
+profile picture from About Me Section.
+
+*/
+
+/* Insert Image Banner */
+.SP_banner {
+    background-image: url("../Images/Banner-gif.gif");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+}
+
+/* Shorter height for mobile devices */
+@media screen and (max-width: 576px) {
+    .SP_banner {
+        height: 100px;
+    }
+}
+
+/* Taller height for larger devices */
+@media screen and (min-width: 576px) {
+    .SP_banner {
+        height: 250px;
+    }
+}
+    
+/* background color for cards */
+
+.bg-color{
+    background-color: #ffe7b3; /* background color for the big boxes */
+}
+
+/* The 6 SP cards styling */
+
+.Logo-cards:hover{
+    transform: scale(0.95);
+    border-radius: 12px;
+    background-color: #ffe7b3 !important;
+    color: rgb(16, 109, 135);
+}
+
+.card-link{
+    text-decoration: none; /* no underline */
+}

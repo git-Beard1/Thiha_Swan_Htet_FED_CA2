@@ -1,0 +1,29 @@
+@charset "utf-8";
+
+/*
+
+    Name    : Thiha Swan Htet
+    Date    : 07/08/2023
+
+    FED CA2 Interactive Website
+    My Sustainability Page CSS
+
+*/
+
+/* Copyright Declaration and References
+
+The reference for the images are cited by comment under the code.
+
+
+The Images are used for educational purposes only. I do not own them, except my 
+profile picture from About Me Section.
+
+*/
+
+.bg-color{
+    background-color: #ffe7b3; /* background color for the big boxes */
+}
+
+.progress-block {
+    background-image: linear-gradient(to right, #b3e0d0, #57d1b9, #08ffc5); /* linear-gradient coloring for table progress */
+}

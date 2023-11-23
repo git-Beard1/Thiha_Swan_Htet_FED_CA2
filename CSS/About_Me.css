@@ -1,0 +1,58 @@
+@charset "utf-8";
+
+/*
+
+    Name    : Thiha Swan Htet
+    Date    : 07/08/2023
+
+    FED CA2 Interactive Website
+    About Me/index Page CSS
+
+*/
+
+/* Copyright Declaration and References
+
+The reference for the images are cited by comment under the code.
+
+
+The Images are used for educational purposes only. I do not own them, except my 
+profile picture from About Me Section.
+
+*/
+
+@media (min-width: 992px) {
+    .self-introduction {
+        font-size: 1.4rem; /* font-size 1.4 rem when screen size larger than 992px */
+    }
+}
+
+/* Card colors */
+
+.My_Education_Card_Color{
+    background-color: #ffe7b3 !important;
+}
+
+/* Tab border bottom */
+
+.interest-nav {
+    border-bottom: solid black 1.5px !important;
+}
+
+/* Progress coloring */
+
+.progress-color {
+    background-image: linear-gradient(to bottom right, #0074D9, #00BFFF, #00FFFF);
+}
+
+/* Spotify layout with screen size*/
+@media (min-width: 767px) {
+    #spotify {
+        height: 250px; /* height 250px when screen size larger than 767px */
+    }
+}
+
+@media (max-width: 767px) {
+    #spotify {
+        height: 200px; /* height 200px when screen size smaller than 767px */ 
+    }
+}
